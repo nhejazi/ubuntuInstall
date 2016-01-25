@@ -1,9 +1,11 @@
-# Linux Ubuntu Customization
-## Fresh Install on Chromebook (with Crouton)
+# Linux Ubuntu customization
+## Fresh Installs on Chromebook (via Crouton)
 
 My set of customization scripts for setting Linux Ubuntu to my preferences.
 
 **Install Order**
+
+currently, modified from 
 
 1. sudo initial\_apt\_get.sh - Install all of the basics
 2. configure\_git.sh
@@ -17,7 +19,7 @@ My set of customization scripts for setting Linux Ubuntu to my preferences.
 10. sudo python\_upgrade.sh - Scipy takes a real long time to compile
 11. sudo install\_ros.sh
 11. install\_rgbdslamv2.sh
-12. sudo install\_latex.sh - Pulls > 1Gb from internet
+12. sudo install\_latex.sh - Pulls > 1Gb from internet (_avoid on Chromebook_)
 13. install\_root.sh - no sudo
 13. sudo install\_sis.sh - Only works in 12.04
 14. vim\_upgrade.sh
