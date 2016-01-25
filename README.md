@@ -5,7 +5,7 @@ My set of customization scripts for setting Linux Ubuntu to my preferences.
 
 **Install Order**
 
-currently, modified from 
+currently, modified from a set of scripts for non-Chromebook Ubuntu -- to be updated...
 
 1. sudo initial\_apt\_get.sh - Install all of the basics
 2. configure\_git.sh
