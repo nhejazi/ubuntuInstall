@@ -1,4 +1,5 @@
-### Linux Ubuntu preferences
+# Linux Ubuntu 
+## Fresh Install on Chromebook (with Crouton)
 
 My set of customization scripts for setting Linux Ubuntu to my preferences.
 
