@@ -7,4 +7,4 @@ fi
 
 apt-get install -y texlive-base texmaker texlive-latex-extra texlive-publishers texlive-fonts-recommended texlive-science texlive-bibtex-extra texlive-humanities
 
-apt-get install texlive-latex-base  #for lightweight TeX distribution
+apt-get install texlive-latex-base texlive-xetex  #for lightweight TeX distribution
