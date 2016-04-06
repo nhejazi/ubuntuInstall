@@ -18,7 +18,7 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 1. `sudo _getBasics.sh`
 2. `sudo _getBrew.sh`
 3. `sudo _getMyVim.sh`
-4. `sudo _getNeovim.sh`
+4. `sudo _getNeovim.sh` - DEPRECATED => SKIP
 5. ...
 
 
