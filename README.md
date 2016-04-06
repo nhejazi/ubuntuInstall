@@ -15,11 +15,14 @@ provided
 here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-on-chromebook-with-crouton).
 
 ### New list
-1. `sudo _getBasics.sh`
-2. `sudo _getBrew.sh`
-3. `sudo _getMyVim.sh`
-4. `sudo _getNeovim.sh` - DEPRECATED => SKIP
-5. ...
+1. `sudo _getBasics.sh` (requires `sudo` for `apt-get`)
+2. `sh _getBrew.sh`
+3. `sh _getMyVim.sh`
+4. `sh _getNeovim.sh` - DEPRECATED => SKIP
+5. `sh _getCoreTools.sh`
+6. `sh _getHammerspoon.sh`
+7. `sh _getShellConfig.sh`
+8. `sh _getCoreLangs.sh`
 
 
 ### Old list
