@@ -1,7 +1,8 @@
 # Fresh Linux Ubuntu
 
-> Customization of fresh Ubuntu installs for Chromebook (via 
-[Crouton](https://github.com/dnschneid/crouton)).
+> Customization of fresh Ubuntu installs for Chromebook with
+[Crouton](https://github.com/dnschneid/crouton) and
+[Linuxbrew](http://linuxbrew.sh/).
 
 My set of customization scripts for setting Linux Ubuntu to my preferences.
 
@@ -14,8 +15,11 @@ provided
 here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-on-chromebook-with-crouton).
 
 ### New list
-1. `sudo _getNeovim.sh`
-2. ...
+1. `sudo _getBasics.sh`
+2. `sudo _getBrew.sh`
+3. `sudo _getMyVim.sh`
+4. `sudo _getNeovim.sh`
+5. ...
 
 
 ### Old list
