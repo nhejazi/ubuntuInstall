@@ -1,11 +1,13 @@
-# Linux Ubuntu customization
-## Fresh Installs on Chromebook (via Crouton)
+# Fresh Linux Ubuntu
+
+> Customization of fresh Ubuntu installs for Chromebook (via 
+[Crouton](https://github.com/dnschneid/crouton)).
 
 My set of customization scripts for setting Linux Ubuntu to my preferences.
 
-**Install Order**
+**Directions/Roadmap**
 
-currently, modified from a set of scripts for non-Chromebook Ubuntu -- to be updated...
+Modified from a set of scripts for non-Chromebook Ubuntu - errors may persist...
 
 1. sudo initial\_apt\_get.sh - Install all of the basics
 2. configure\_git.sh
@@ -24,3 +26,8 @@ currently, modified from a set of scripts for non-Chromebook Ubuntu -- to be upd
 13. sudo install\_sis.sh - Only works in 12.04
 14. vim\_upgrade.sh
 
+__For Updates:__
+```
+sudo apt-get update
+sudo apt-get purge && sudo apt-get autoclean
+```
