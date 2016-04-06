@@ -18,11 +18,12 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 1. `sudo _getBasics.sh` (requires `sudo` for `apt-get`)
 2. `sh _getBrew.sh`
 3. `sh _getMyVim.sh`
-4. `sh _getNeovim.sh` - DEPRECATED => SKIP
-5. `sh _getCoreTools.sh`
-6. `sh _getHammerspoon.sh`
-7. `sh _getShellConfig.sh`
-8. `sh _getCoreLangs.sh`
+4. `sh _getCoreTools.sh`
+5. `sh _getHammerspoon.sh`
+6. `sh _getShellConfig.sh`
+7. `sh _getCoreLangs.sh`
+
+n.b., `_getNeovim.sh` is DEPRECATED in favor of `brew`
 
 
 ### Old list
