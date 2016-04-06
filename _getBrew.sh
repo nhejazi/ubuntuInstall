@@ -6,12 +6,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/linuxbrew/go/i
 # get Linuxbrew essentials
 brew update && brew upgrade
 brew doctor
-brew tap caskroom/cask
 brew tap homebrew/science
-brew tap caskroom/fonts
 
 # get core Linuxbrew tools
 brew install wget git coreutils curl
 brew install zmq czmq libzmq3
 brew install libsvg libxml2 gdal geos boost
-brew cask install font-fira-code font-fontawesome
