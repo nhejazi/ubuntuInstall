@@ -40,8 +40,13 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 13. sudo install\_sis.sh - Only works in 12.04
 14. vim\_upgrade.sh
 
-__For Updates:__
+__For Updates (with `brew`):__
+```bash
+brew update && brew upgrade && brew cleanup
 ```
+
+__For Updates (with `apt-get`):__
+```bash
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get autoclean && sudo apt-get autoremove
 ```
