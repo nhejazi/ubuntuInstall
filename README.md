@@ -9,6 +9,16 @@ My set of customization scripts for setting Linux Ubuntu to my preferences.
 
 Modified from a set of scripts for non-Chromebook Ubuntu - errors may persist...
 
+First, if on ChromeOS, install Ubuntu with Crouton, using [the directions
+provided
+here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-on-chromebook-with-crouton).
+
+### New list
+1. `sudo _getNeovim.sh`
+2. ...
+
+
+### Old list
 1. sudo initial\_apt\_get.sh - Install all of the basics
 2. configure\_git.sh
 3. configure\_bash.sh - Set up bash prompt and universal aliases
@@ -28,6 +38,6 @@ Modified from a set of scripts for non-Chromebook Ubuntu - errors may persist...
 
 __For Updates:__
 ```
-sudo apt-get update
-sudo apt-get purge && sudo apt-get autoclean
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get autoclean && sudo apt-get autoremove
 ```
