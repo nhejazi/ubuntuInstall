@@ -45,3 +45,11 @@ __Updates with `apt-get`:__
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get autoclean && sudo apt-get autoremove
 ```
+
+---
+
+## License
+
+&copy; 2016 Nima Hejazi
+
+This repository is licensed under the MIT license. See `LICENSE` for details.
