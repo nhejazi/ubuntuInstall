@@ -27,10 +27,12 @@ n.b., `_getNeovim.sh` is DEPRECATED in favor of `brew`
 1. `sudo apt-get update`
 2. `sudo apt-get install build-essential software-properties-common ruby git`
 3. `git clone https://github.com/nhejazi/freshUbuntu.git`
-4. `sh ~/freshUbuntu/_getBrew.sh`
-5. `sh ~/freshUbuntu/_getCoreTools.sh`
-6. `sh ~/freshUbuntu/_getCoreLangs.sh`
-7. `rm -rf ~/freshUbuntu`
+4. `sh ~/freshUbuntu/_getBrew1.sh`
+5. `source ~/.bashrc ~/.profile`
+6. `sh ~/freshUbuntu/_getBrew2.sh`
+7. `sh ~/freshUbuntu/_getCoreTools.sh`
+8. `sh ~/freshUbuntu/_getCoreLangs.sh`
+9. `rm -rf ~/freshUbuntu`
 
 
 ### Old list
