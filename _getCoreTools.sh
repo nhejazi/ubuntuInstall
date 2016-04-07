@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # more scientific computing tools
-brew install pandoc cairo qt node libtiff libjpeg webp
+brew install cairo qt node libtiff libjpeg
 
 # adding dependencies for using termpdf tool
 brew install bash gs poppler pdfgrep djvulibre selecta
