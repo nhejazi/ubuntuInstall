@@ -32,8 +32,9 @@ n.b., `_getNeovim.sh` is DEPRECATED in favor of `brew`
 5. `source ~/.bashrc ~/.profile`
 6. `sh ~/freshUbuntu/_getBrew.sh`
 7. `sh ~/freshUbuntu/_getCoreLangs.sh`
-8. `rm -rf ~/freshUbuntu`
-9. install packages with [ezPkgs](https://github.com/nhejazi/ezPkgs)
+8. `sudo ~/freshUbuntu/_getNoBrew.sh`
+9. `rm -rf ~/freshUbuntu`
+10. install packages with [ezPkgs](https://github.com/nhejazi/ezPkgs)
 
 __Updates with `brew`:__
 ```bash
