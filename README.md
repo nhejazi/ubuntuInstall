@@ -15,15 +15,23 @@ provided
 here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-on-chromebook-with-crouton).
 
 ### New list
-1. `sudo _getBasics.sh` (requires `sudo` for `apt-get`)
+1. `sudo sh _getBasics.sh` (requires `sudo` for `apt-get`)
 2. `sh _getBrew.sh`
 3. `sh _getMyVim.sh`
 4. `sh _getCoreTools.sh`
-5. `sh _getHammerspoon.sh`
-6. `sh _getShellConfig.sh`
-7. `sh _getCoreLangs.sh`
+5. `sh _getCoreLangs.sh`
 
 n.b., `_getNeovim.sh` is DEPRECATED in favor of `brew`
+
+### For AWS
+to use this set of install scripts on an Ubuntu image via AWS:
+1. `sudo apt-get update`
+2. `sudo apt-get install build-essential git ruby`
+3. `git clone https://github.com/nhejazi/freshUbuntu.git`
+4. `sh ~/freshUbuntu/_getBrew.sh`
+5. `sh ~/freshUbuntu/_getCoreTools.sh`
+6. `sh ~/freshUbuntu/_getCoreLangs.sh`
+7. `rm -rf ~/freshUbuntu`
 
 
 ### Old list
@@ -44,12 +52,12 @@ n.b., `_getNeovim.sh` is DEPRECATED in favor of `brew`
 13. sudo install\_sis.sh - Only works in 12.04
 14. vim\_upgrade.sh
 
-__For Updates (with `brew`):__
+__For Updates with `brew`:__
 ```bash
 brew update && brew upgrade && brew cleanup
 ```
 
-__For Updates (with `apt-get`):__
+__For Updates with `apt-get`:__
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get autoclean && sudo apt-get autoremove
