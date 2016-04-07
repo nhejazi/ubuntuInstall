@@ -23,8 +23,7 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 
 n.b., `_getNeovim.sh` is DEPRECATED in favor of `brew`
 
-### For AWS
-to use this set of install scripts on an Ubuntu image via AWS:
+### For AWS (to using these scripts on AWS Ubuntu instance)
 1. `sudo apt-get update`
 2. `sudo apt-get install build-essential git ruby`
 3. `git clone https://github.com/nhejazi/freshUbuntu.git`
