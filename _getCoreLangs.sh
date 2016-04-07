@@ -10,9 +10,9 @@ brew install python3
 brew install R --without-x11
 
 # install Julia
-brew tap staticfloat/julia
-brew install julia
-brew update && brew upgrade julia
+#brew tap staticfloat/julia
+#brew install julia
+#brew update && brew upgrade julia
 
 # install Scala
-brew install scala --with-docs
+#brew install scala --with-docs
