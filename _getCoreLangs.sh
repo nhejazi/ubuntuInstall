@@ -5,7 +5,7 @@ brew install python
 brew install python3
 
 # install R
-brew install R
+brew install R --without-x11
 
 # install Julia
 brew tap staticfloat/julia
