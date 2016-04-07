@@ -23,14 +23,14 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 
 n.b., `_getNeovim.sh` is DEPRECATED in favor of `brew`
 
-### AWS instances:
+### AWS-EC2 instances:
 1. `sudo apt-get update`
 2. `sudo apt-get install build-essential software-properties-common texinfo 
    ruby git`
 3. `git clone https://github.com/nhejazi/freshUbuntu.git`
-4. `sh ~/freshUbuntu/_getBrew1.sh`
+4. `sh ~/freshUbuntu/_initBrew.sh`
 5. `source ~/.bashrc ~/.profile`
-6. `sh ~/freshUbuntu/_getBrew2.sh`
+6. `sh ~/freshUbuntu/_getBrew.sh`
 7. `sh ~/freshUbuntu/_getCoreLangs.sh`
 8. `rm -rf ~/freshUbuntu`
 9. install packages with [ezPkgs](https://github.com/nhejazi/ezPkgs)

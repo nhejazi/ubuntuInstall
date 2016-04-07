@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+## Note - Python2, Python3, R, are working; Julia, Scala return errors
+
 # install Python 2 and 3
 brew install python
 brew install python3
