@@ -16,25 +16,28 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 
 ### Standard setup:
 1. `sudo _getBasics.sh`
-2. `sh _getBrew.sh`
-3. `sh _getMyVim.sh`
-4. `sh _getCoreTools.sh`
+2. `sh _initBrew.sh`
+3. `sh _getBrew.sh`
+4. `sudo _getVim.sh`
 5. `sh _getCoreLangs.sh`
-
-n.b., `_getNeovim.sh` is DEPRECATED in favor of `brew`
+6. `sudo _getNoBrew.sh`
+7. `sh _getCoreTools.sh`
 
 ### AWS-EC2 instances:
 1. `sudo apt-get update`
-2. `sudo apt-get install build-essential software-properties-common texinfo 
-   ruby git`
+2. `sudo apt-get install build-essential ruby git`
 3. `git clone https://github.com/nhejazi/freshUbuntu.git`
-4. `sh ~/freshUbuntu/_initBrew.sh`
-5. `source ~/.bashrc ~/.profile`
-6. `sh ~/freshUbuntu/_getBrew.sh`
-7. `sh ~/freshUbuntu/_getCoreLangs.sh`
-8. `sudo ~/freshUbuntu/_getNoBrew.sh`
-9. `rm -rf ~/freshUbuntu`
-10. install packages with [ezPkgs](https://github.com/nhejazi/ezPkgs)
+4. `sudo ~/freshUbuntu/_getBasics.sh`
+5. `sh ~/freshUbuntu/_initBrew.sh`
+6. `source ~/.bashrc ~/.profile`
+7. `sh ~/freshUbuntu/_getBrew.sh`
+8. `sudo ~/freshUbuntu/_getVim.sh`
+9. `sh ~/freshUbuntu/_getCoreLangs.sh`
+10. `sudo ~/freshUbuntu/_getNoBrew.sh`
+11. `rm -rf ~/freshUbuntu`
+
+n.b., package libraries for Python, Julia, and R may be 
+installed with [ezPkgs](https://github.com/nhejazi/ezPkgs).
 
 __Updates with `brew`:__
 ```bash
