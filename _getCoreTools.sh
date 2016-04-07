@@ -1,13 +1,10 @@
 #!/usr/bin/bash
 
 # more scientific computing tools
-brew install pandoc cairo qt node
-brew install libtiff libjpeg webp little-cms2
-brew install graphviz --with-librsvg --with-x11
-brew install imagemagick --with-fftw --with-librsvg --with-x11
+brew install pandoc cairo qt node libtiff libjpeg webp
 
 # adding dependencies for using termpdf tool
-brew install bash gs imagemagick poppler pdfgrep djvulibre selecta
+brew install bash gs poppler pdfgrep djvulibre selecta
 
 # installing tool for StackOverflow support from terminal
 npm install -g how2
