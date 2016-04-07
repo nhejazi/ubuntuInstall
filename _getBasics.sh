@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
-apt-get install build-essential curl git m4 python-setuptools ruby texinfo libbz2-dev 
-apt-get install libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
+apt-get install build-essential software-properties-common python-setuptools curl git ruby m4
+apt-get install libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
