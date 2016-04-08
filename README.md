@@ -6,15 +6,22 @@
 
 My set of customization scripts for setting Linux Ubuntu to my preferences.
 
-**Directions/Roadmap**
+This workflow has been tested on [Amazon's EC2 Ubuntu 
+instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS) as well as
+on my [Acer Chromebook 11 
+C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) (with
+[Ubuntu Trusty](http://releases.ubuntu.com/14.04/) and an [XFCE 
+desktop](http://www.xfce.org/) installed via 
+[Crouton](https://github.com/dnschneid/crouton)).
 
-Modified from a set of scripts for non-Chromebook Ubuntu - errors may persist...
+**Directions/Roadmap**
 
 First, if on ChromeOS, install Ubuntu with Crouton, using [the directions
 provided
 here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-on-chromebook-with-crouton).
 
-### Standard setup:
+### Standard (e.g., on Chromebook):
+I prefer this setup when configuring Ubuntu on a permanent machine.
 1. `sudo _getBasics.sh`
 2. `sh _initBrew.sh`
 3. `sh _getBrew.sh`
@@ -23,7 +30,8 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 6. `sudo _getNoBrew.sh`
 7. `sh _getCoreTools.sh`
 
-### AWS-EC2 instances:
+### Amazon's EC2 Ubuntu instances:
+I prefer this setup when configuring fresh, temporary EC2 instances.
 1. `sudo apt-get update`
 2. `sudo apt-get install build-essential ruby git`
 3. `git clone https://github.com/nhejazi/freshUbuntu.git`
@@ -36,15 +44,15 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 10. `sudo ~/freshUbuntu/_getNoBrew.sh`
 11. `rm -rf ~/freshUbuntu`
 
-n.b., package libraries for Python, Julia, and R may be 
+_n.b._, package libraries for Python, Julia, and R may be 
 installed with [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
 
-__Updates with `brew`:__
+__Updates with `brew`__
 ```bash
 brew update && brew upgrade && brew cleanup
 ```
 
-__Updates with `apt-get`:__
+__Updates with `apt-get`__
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get autoclean && sudo apt-get autoremove
