@@ -9,9 +9,9 @@ My set of customization scripts for setting Linux Ubuntu to my preferences.
 This workflow has been tested on [Amazon's EC2 Ubuntu 
 instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS) as well as
 on my [Acer Chromebook 11 
-C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) (with
-[Ubuntu Trusty](http://releases.ubuntu.com/14.04/) and an [XFCE 
-desktop](http://www.xfce.org/) installed via 
+C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) 
+(running [Ubuntu Trusty](http://releases.ubuntu.com/14.04/) and an 
+[XFCE desktop](http://www.xfce.org/) installed via 
 [Crouton](https://github.com/dnschneid/crouton)).
 
 **Directions/Roadmap**
@@ -22,6 +22,7 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 
 ### Standard (e.g., on Chromebook):
 I prefer this setup when configuring Ubuntu on a permanent machine.
+
 1. `sudo _getBasics.sh`
 2. `sh _initBrew.sh`
 3. `sh _getBrew.sh`
@@ -32,6 +33,7 @@ I prefer this setup when configuring Ubuntu on a permanent machine.
 
 ### Amazon's EC2 Ubuntu instances:
 I prefer this setup when configuring fresh, temporary EC2 instances.
+
 1. `sudo apt-get update`
 2. `sudo apt-get install build-essential ruby git`
 3. `git clone https://github.com/nhejazi/freshUbuntu.git`
