@@ -37,7 +37,7 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 11. `rm -rf ~/freshUbuntu`
 
 n.b., package libraries for Python, Julia, and R may be 
-installed with [ezPkgs](https://github.com/nhejazi/ezPkgs).
+installed with [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
 
 __Updates with `brew`:__
 ```bash
