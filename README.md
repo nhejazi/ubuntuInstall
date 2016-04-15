@@ -23,27 +23,29 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 ### Standard (e.g., on Chromebook):
 I prefer this setup when configuring Ubuntu on a permanent machine.
 
-1. `sudo _getBasics.sh`
-2. `sh _initBrew.sh`
-3. `sh _getBrew.sh`
-4. `sudo _getVim.sh`
-5. `sh _getCoreLangs.sh`
-6. `sudo _getNoBrew.sh`
-7. `sh _getCoreTools.sh`
+1. `sudo sh ~/freshUbuntu/_getBasics.sh`
+2. `sh ~/freshUbuntu/_initBrew.sh`
+3. `source ~/.bashrc ~/.profile`
+4. `sh ~/freshUbuntu/_getBrew.sh`
+5. `sudo sh ~/freshUbuntu/_getVim.sh`
+6. `sh ~/freshUbuntu/_getLangs-brew.sh`
+7. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
+8. `sh _getCore.sh`
+9. `rm -rf ~/freshUbuntu`
 
 ### Amazon's EC2 Ubuntu instances:
-I prefer this setup when configuring fresh, temporary EC2 instances.
+I prefer this setup when configuring fresh EC2 instances.
 
 1. `sudo apt-get update`
 2. `sudo apt-get install build-essential ruby git`
-3. `git clone https://github.com/nhejazi/freshUbuntu.git`
-4. `sudo ~/freshUbuntu/_getBasics.sh`
+3. `git clone http://github.com/nhejazi/freshUbuntu.git`
+4. `sudo sh ~/freshUbuntu/_getBasics.sh`
 5. `sh ~/freshUbuntu/_initBrew.sh`
 6. `source ~/.bashrc ~/.profile`
 7. `sh ~/freshUbuntu/_getBrew.sh`
-8. `sudo ~/freshUbuntu/_getVim.sh`
+8. `sudo sh ~/freshUbuntu/_getVim.sh`
 9. `sh ~/freshUbuntu/_getCoreLangs.sh`
-10. `sudo ~/freshUbuntu/_getNoBrew.sh`
+10. `sudo sh ~/freshUbuntu/_getNoBrew.sh`
 11. `rm -rf ~/freshUbuntu`
 
 _n.b._, package libraries for Python, Julia, and R may be 
