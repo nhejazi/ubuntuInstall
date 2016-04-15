@@ -23,15 +23,16 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 ### Standard (e.g., on Chromebook):
 I prefer this setup when configuring Ubuntu on a permanent machine.
 
-1. `sudo sh ~/freshUbuntu/_getBasics.sh`
-2. `sh ~/freshUbuntu/_initBrew.sh`
-3. `source ~/.bashrc ~/.profile`
-4. `sh ~/freshUbuntu/_getBrew.sh`
-5. `sudo sh ~/freshUbuntu/_getVim.sh`
-6. `sh ~/freshUbuntu/_getLangs-brew.sh`
-7. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
-8. `sh _getCore.sh`
-9. `rm -rf ~/freshUbuntu`
+1. `sudo apt-get update`
+2. `sudo sh ~/freshUbuntu/_getBasics.sh`
+3. `sh ~/freshUbuntu/_initBrew.sh`
+4. `source ~/.bashrc ~/.profile`
+5. `sh ~/freshUbuntu/_getBrew.sh`
+6. `sudo sh ~/freshUbuntu/_getVim.sh`
+7. `sh ~/freshUbuntu/_getLangs-brew.sh`
+8. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
+9. `sh _getCore.sh`
+10. `rm -rf ~/freshUbuntu`
 
 ### Amazon's EC2 Ubuntu instances:
 I prefer this setup when configuring fresh EC2 instances.
@@ -44,12 +45,12 @@ I prefer this setup when configuring fresh EC2 instances.
 6. `source ~/.bashrc ~/.profile`
 7. `sh ~/freshUbuntu/_getBrew.sh`
 8. `sudo sh ~/freshUbuntu/_getVim.sh`
-9. `sh ~/freshUbuntu/_getCoreLangs.sh`
-10. `sudo sh ~/freshUbuntu/_getNoBrew.sh`
+9. `sh ~/freshUbuntu/_getLangs-brew.sh`
+10. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
 11. `rm -rf ~/freshUbuntu`
 
-_n.b._, package libraries for Python, Julia, and R may be 
-installed with [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
+_N.B._, package libraries for Python, Julia, R, and other tools may be 
+installed with scripts from [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
 
 __Updates with `brew`__
 ```bash
