@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # more scientific computing tools
 brew install cairo qt node libtiff libjpeg

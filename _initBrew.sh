@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # get Linuxbrew utility
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/linuxbrew/go/install)"

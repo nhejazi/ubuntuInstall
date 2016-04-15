@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 ## Note - Python2, Python3, R, are working; Julia, Scala return errors
 

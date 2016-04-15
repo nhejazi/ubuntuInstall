@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # get Linuxbrew essentials
 brew update && brew upgrade

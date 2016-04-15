@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # get Vim and NeoVim
 add-apt-repository ppa:neovim-ppa/unstable

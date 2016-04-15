@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # julia install
 add-apt-repository ppa:staticfloat/juliareleases
