@@ -1,10 +1,13 @@
-# Fresh Linux Ubuntu
+# Fresh Linux Ubuntu (v. Linuxbrew)
 
 > Customization of fresh Ubuntu installs for Chromebook with
 [Crouton](https://github.com/dnschneid/crouton) and
 [Linuxbrew](http://linuxbrew.sh/).
 
 My set of customization scripts for setting Linux Ubuntu to my preferences.
+
+Note that this set of scripts makes heavy use of the Linuxbrew package
+manager (`brew`) over Debian's Advanced Packaging Tool (e.g., `apt-get`)
 
 This workflow has been tested on [Amazon's EC2 Ubuntu 
 instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS) as well as
@@ -48,17 +51,6 @@ I prefer this setup when configuring fresh EC2 instances.
 9. `sh ~/freshUbuntu/_getLangs-brew.sh`
 10. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
 11. `rm -rf ~/freshUbuntu`
-
-### Setup using `apt-get` only 
-_(in progress, to replace use of Linuxbrew)_
-
-1. `sudo apt-get update`
-2. `sudo sh _aptCore.sh`
-3. `sudo sh _aptLangs.sh`
-4. `sudo sh _aptVim.sh`
-5. `source ~/.bashrc ~/.profile`
-6. `rm -rf ~freshUbuntu`
-7. add Atom editor + pandoc with .deb packages
 
 _N.B._, package libraries for Python, Julia, R, and other tools may be 
 installed with scripts from [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
