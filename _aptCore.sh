@@ -13,4 +13,3 @@ apt-get install libgdal-dev libxml2-dev
 # setup dotfiles
 git clone https://github.com/nhejazi/mydotfiles.git ~/.dotfiles
 sh ~/.dotfiles/_setup.sh
-source ~/.bashrc ~/.profile
