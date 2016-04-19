@@ -1,8 +1,7 @@
 # Fresh Linux Ubuntu
 
 > Customization of fresh Ubuntu installs for Chromebook with
-[Crouton](https://github.com/dnschneid/crouton) and
-[Linuxbrew](http://linuxbrew.sh/).
+[Crouton](https://github.com/dnschneid/crouton).
 
 My set of customization scripts for setting Linux Ubuntu to my preferences.
 
@@ -24,15 +23,12 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 I prefer this setup when configuring Ubuntu on a permanent machine.
 
 1. `sudo apt-get update`
-2. `sudo sh ~/freshUbuntu/_getBasics.sh`
-3. `sh ~/freshUbuntu/_initBrew.sh`
-4. `source ~/.bashrc ~/.profile`
-5. `sh ~/freshUbuntu/_getBrew.sh`
-6. `sudo sh ~/freshUbuntu/_aptVim.sh`
-7. `sh ~/freshUbuntu/_getLangs-brew.sh`
-8. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
-9. `sh _getCore.sh`
-10. `rm -rf ~/freshUbuntu`
+2. `sudo sh _aptCore.sh`
+3. `sudo sh _aptLangs.sh`
+4. `sudo sh _aptVim.sh`
+5. `source ~/.bashrc ~/.profile`
+6. `rm -rf ~freshUbuntu`
+7. add Atom editor + pandoc with .deb packages
 
 ### Amazon's EC2 Ubuntu instances:
 I prefer this setup when configuring fresh EC2 instances.
@@ -49,17 +45,6 @@ I prefer this setup when configuring fresh EC2 instances.
 10. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
 11. `rm -rf ~/freshUbuntu`
 
-### Setup using `apt-get` only 
-_(in progress, to replace use of Linuxbrew)_
-
-1. `sudo apt-get update`
-2. `sudo sh _aptCore.sh`
-3. `sudo sh _aptLangs.sh`
-4. `sudo sh _aptVim.sh`
-5. `source ~/.bashrc ~/.profile`
-6. `rm -rf ~freshUbuntu`
-7. add Atom editor + pandoc with .deb packages
-
 _N.B._, package libraries for Python, Julia, R, and other tools may be 
 installed with scripts from [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
 
@@ -67,11 +52,6 @@ __Updates with `apt-get`__
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get autoclean && sudo apt-get autoremove
-```
-
-__Updates with `brew`__
-```bash
-brew update && brew upgrade && brew cleanup
 ```
 
 ---
