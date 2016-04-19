@@ -37,11 +37,10 @@ I prefer this setup when configuring fresh EC2 instances.
 2. `sudo apt-get install build-essential ruby git`
 3. `git clone http://github.com/nhejazi/freshUbuntu.git`
 4. `sudo sh ~/freshUbuntu/_aptCore.sh`
-5. `sudo sh ~/freshUbuntu/_aptTools.sh`
-6. `sudo sh ~/freshUbuntu/_aptLangs.sh`
-7. `sudo sh ~/freshUbuntu/_aptVim.sh`
-8. `source ~/.bashrc ~/.profile`
-9. `rm -rf ~/freshUbuntu`
+5. `sudo sh ~/freshUbuntu/_aptLangs.sh`
+6. `sudo sh ~/freshUbuntu/_aptVim.sh`
+7. `source ~/.bashrc ~/.profile`
+8. `rm -rf ~/freshUbuntu`
 
 _N.B._, package libraries for Python, Julia, R, and other tools may be 
 installed with scripts from [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
