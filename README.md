@@ -56,7 +56,9 @@ _(in progress, to replace use of Linuxbrew)_
 2. `sudo sh _aptCore.sh`
 3. `sudo sh _aptLangs.sh`
 4. `sudo sh _aptVim.sh`
-5. `rm -rf ~freshUbuntu`
+5. `source ~/.bashrc ~/.profile`
+6. `rm -rf ~freshUbuntu`
+7. add Atom editor + pandoc with .deb packages
 
 _N.B._, package libraries for Python, Julia, R, and other tools may be 
 installed with scripts from [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
