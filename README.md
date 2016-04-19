@@ -53,9 +53,9 @@ I prefer this setup when configuring fresh EC2 instances.
 _(in progress, to replace use of Linuxbrew)_
 
 1. `sudo apt-get update`
-2. `sudo sh aptCore.sh`
-3. `sudo sh aptLangs.sh`
-4. `sudo sh aptVim.sh`
+2. `sudo sh _aptCore.sh`
+3. `sudo sh _aptLangs.sh`
+4. `sudo sh _aptVim.sh`
 5. `rm -rf ~freshUbuntu`
 
 _N.B._, package libraries for Python, Julia, R, and other tools may be 
