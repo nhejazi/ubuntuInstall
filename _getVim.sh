@@ -4,7 +4,6 @@
 add-apt-repository ppa:neovim-ppa/unstable
 apt-get update
 apt-get install vim neovim
-apt-get install python-dev python-pip python3-dev python3-pip
 
 # setup preferred configuration for Vim
 if [ -e ~/.vim ]; then 
