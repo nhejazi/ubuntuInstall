@@ -28,7 +28,7 @@ I prefer this setup when configuring Ubuntu on a permanent machine.
 3. `sh ~/freshUbuntu/_initBrew.sh`
 4. `source ~/.bashrc ~/.profile`
 5. `sh ~/freshUbuntu/_getBrew.sh`
-6. `sudo sh ~/freshUbuntu/_getVim.sh`
+6. `sudo sh ~/freshUbuntu/_aptVim.sh`
 7. `sh ~/freshUbuntu/_getLangs-brew.sh`
 8. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
 9. `sh _getCore.sh`
@@ -44,23 +44,32 @@ I prefer this setup when configuring fresh EC2 instances.
 5. `sh ~/freshUbuntu/_initBrew.sh`
 6. `source ~/.bashrc ~/.profile`
 7. `sh ~/freshUbuntu/_getBrew.sh`
-8. `sudo sh ~/freshUbuntu/_getVim.sh`
+8. `sudo sh ~/freshUbuntu/_aptVim.sh`
 9. `sh ~/freshUbuntu/_getLangs-brew.sh`
 10. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
 11. `rm -rf ~/freshUbuntu`
 
+### Setup using `apt-get` only 
+_(in progress, to replace use of Linuxbrew)_
+
+1. `sudo apt-get update`
+2. `sudo sh aptCore.sh`
+3. `sudo sh aptLangs.sh`
+4. `sudo sh aptVim.sh`
+5. `rm -rf ~freshUbuntu`
+
 _N.B._, package libraries for Python, Julia, R, and other tools may be 
 installed with scripts from [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
-
-__Updates with `brew`__
-```bash
-brew update && brew upgrade && brew cleanup
-```
 
 __Updates with `apt-get`__
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get autoclean && sudo apt-get autoremove
+```
+
+__Updates with `brew`__
+```bash
+brew update && brew upgrade && brew cleanup
 ```
 
 ---
