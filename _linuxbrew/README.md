@@ -31,10 +31,10 @@ I prefer this setup when configuring Ubuntu on a permanent machine.
 3. `sh ~/freshUbuntu/_initBrew.sh`
 4. `source ~/.bashrc ~/.profile`
 5. `sh ~/freshUbuntu/_getBrew.sh`
-6. `sudo sh ~/freshUbuntu/_aptVim.sh`
+6. `sudo sh ~/freshUbuntu/_getVim.sh`
 7. `sh ~/freshUbuntu/_getLangs-brew.sh`
 8. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
-9. `sh _getCore.sh`
+9. `sh ~/freshUbuntu/_getCore.sh`
 10. `rm -rf ~/freshUbuntu`
 
 ### Amazon's EC2 Ubuntu instances:
@@ -47,7 +47,7 @@ I prefer this setup when configuring fresh EC2 instances.
 5. `sh ~/freshUbuntu/_initBrew.sh`
 6. `source ~/.bashrc ~/.profile`
 7. `sh ~/freshUbuntu/_getBrew.sh`
-8. `sudo sh ~/freshUbuntu/_aptVim.sh`
+8. `sudo sh ~/freshUbuntu/_getVim.sh`
 9. `sh ~/freshUbuntu/_getLangs-brew.sh`
 10. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
 11. `rm -rf ~/freshUbuntu`
