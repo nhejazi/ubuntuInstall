@@ -23,12 +23,12 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 I prefer this setup when configuring Ubuntu on a permanent machine.
 
 1. `sudo apt-get update`
-2. `sudo sh _aptCore.sh`
-3. `sudo sh _aptLangs.sh`
-4. `sudo sh _aptVim.sh`
-5. `source ~/.bashrc ~/.profile`
-6. `rm -rf ~freshUbuntu`
-7. add Atom editor + pandoc with .deb packages
+2. `sudo sh ~/freshUbuntu/_aptCore.sh`
+3. `sudo sh ~/freshUbuntu/_aptTools.sh`
+4. `sudo sh ~/freshUbuntu/_aptLangs.sh`
+5. `sudo sh ~/freshUbuntu/_aptVim.sh`
+6. `source ~/.bashrc ~/.profile`
+7. `rm -rf ~freshUbuntu`
 
 ### Amazon's EC2 Ubuntu instances:
 I prefer this setup when configuring fresh EC2 instances.
@@ -36,14 +36,12 @@ I prefer this setup when configuring fresh EC2 instances.
 1. `sudo apt-get update`
 2. `sudo apt-get install build-essential ruby git`
 3. `git clone http://github.com/nhejazi/freshUbuntu.git`
-4. `sudo sh ~/freshUbuntu/_getBasics.sh`
-5. `sh ~/freshUbuntu/_initBrew.sh`
-6. `source ~/.bashrc ~/.profile`
-7. `sh ~/freshUbuntu/_getBrew.sh`
-8. `sudo sh ~/freshUbuntu/_aptVim.sh`
-9. `sh ~/freshUbuntu/_getLangs-brew.sh`
-10. `sudo sh ~/freshUbuntu/_getLangs-nobrew.sh`
-11. `rm -rf ~/freshUbuntu`
+4. `sudo sh ~/freshUbuntu/_aptCore.sh`
+5. `sudo sh ~/freshUbuntu/_aptTools.sh`
+6. `sudo sh ~/freshUbuntu/_aptLangs.sh`
+7. `sudo sh ~/freshUbuntu/_aptVim.sh`
+8. `source ~/.bashrc ~/.profile`
+9. `rm -rf ~/freshUbuntu`
 
 _N.B._, package libraries for Python, Julia, R, and other tools may be 
 installed with scripts from [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
