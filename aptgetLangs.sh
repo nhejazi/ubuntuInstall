@@ -22,3 +22,14 @@ apt-get install python-software-properties
 add-apt-repository ppa:webupd8team/java
 apt-get update
 apt-get install oracle-java8-installer
+
+# install R and R-dev
+apt-get install r-base
+apt-get install r-base-dev
+deb https://cran.cnr.berkeley.edu/bin/linux/ubuntu trusty/
+
+# install Python and dependencies
+apt-get install libbz2-dev libsqlite3-dev libreadline-dev
+apt-get install zlib1g-dev libncurses5-dev libssl-dev libgdbm-dev
+add-apt-repository ppa:fkrull/deadsnakes
+apt-get install python2.7
