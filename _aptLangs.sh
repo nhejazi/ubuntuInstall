@@ -16,7 +16,8 @@ apt-get install libbz2-dev libsqlite3-dev libreadline-dev
 apt-get install zlib1g-dev libncurses5-dev libssl-dev libgdbm-dev
 add-apt-repository ppa:fkrull/deadsnakes
 apt-get install python2.7
-apt-get install python-dev python-pip python3-dev python3-pip
+apt-get install python-dev python3-dev
+apt-get install python-pip python3-pip
 
 # julia install
 add-apt-repository ppa:staticfloat/juliareleases
