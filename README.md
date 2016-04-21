@@ -23,15 +23,16 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 I prefer this setup when configuring Ubuntu on a permanent machine.
 
 1. `sudo apt-get update`
-2. `sudo sh ~/freshUbuntu/_aptCore.sh`
-3. `sudo sh ~/freshUbuntu/_aptTools.sh`
-4. `sudo sh ~/freshUbuntu/_aptLangs.sh`
-5. `sudo sh ~/freshUbuntu/_aptVim.sh`
-6. `source ~/.bashrc ~/.profile`
-7. `rm -rf ~freshUbuntu`
+2. `sudo apt-get install build-essential git`
+3. `sudo sh ~/freshUbuntu/_aptCore.sh`
+4. `sudo sh ~/freshUbuntu/_aptTools.sh`
+5. `sudo sh ~/freshUbuntu/_aptLangs.sh`
+6. `sudo sh ~/freshUbuntu/_aptVim.sh`
+7. `source ~/.bashrc ~/.profile`
 
 ### Amazon's EC2 Ubuntu instances:
 I prefer this setup when configuring fresh EC2 instances.
+N.B., slight differences from directions given above.
 
 1. `sudo apt-get update`
 2. `sudo apt-get install build-essential ruby git`
@@ -40,7 +41,6 @@ I prefer this setup when configuring fresh EC2 instances.
 5. `sudo sh ~/freshUbuntu/_aptLangs.sh`
 6. `sudo sh ~/freshUbuntu/_aptVim.sh`
 7. `source ~/.bashrc ~/.profile`
-8. `rm -rf ~/freshUbuntu`
 
 _N.B._, package libraries for Python, Julia, R, and other tools may be 
 installed with scripts from [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
