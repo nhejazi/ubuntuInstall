@@ -33,3 +33,6 @@ apt-get install oracle-java8-installer
 # scala install
 wget www.scala-lang.org/files/archive/scala-2.11.7.deb
 dpkg -i scala-2.11.7.deb
+
+# force install all of the above with dependencies
+apt-get install -f
