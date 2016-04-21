@@ -34,7 +34,8 @@ I prefer this setup when configuring Ubuntu on a permanent machine.
 
 ### Amazon's EC2 Ubuntu instances:
 I prefer this setup when configuring fresh EC2 instances.
-N.B., slight differences from directions given above.
+
+_N.B._, slight differences from directions given above.
 
 1. `sudo apt-get update`
 2. `sudo apt-get install build-essential ruby git`
