@@ -7,7 +7,10 @@ apt-get update
 apt-get install sbt
 
 # install R and R-dev
-apt-get install r-base
+sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
+gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+gpg -a --export E084DAB9 | sudo apt-key add -
+apt-get install -y r-base
 apt-get install r-base-dev
 deb https://cran.cnr.berkeley.edu/bin/linux/ubuntu trusty/
 
