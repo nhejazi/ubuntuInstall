@@ -7,18 +7,18 @@ apt-get update
 apt-get install sbt
 
 # install R and R-dev
-sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
-gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
-gpg -a --export E084DAB9 | sudo apt-key add -
-apt-get install -y r-base
-apt-get install r-base-dev
-deb https://cran.cnr.berkeley.edu/bin/linux/ubuntu trusty/
+echo "deb http://cran.fhcrc.org/bin/linux/ubuntu/$(lsb_release -c -s)/" | sudo tee -a /etc/apt/sources.list > /dev/null  
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9  
+add-apt-repository -y ppa:marutter/rdev
+apt-get update
+apt-get upgrade
+apt-get install r-base r-base-dev
 
 # install Python and dependencies
 apt-get install libbz2-dev libsqlite3-dev libreadline-dev
 apt-get install zlib1g-dev libncurses5-dev libssl-dev libgdbm-dev
 add-apt-repository ppa:fkrull/deadsnakes
-apt-get install python2.7
+apt-get install python2.7 python3.5
 apt-get install python-dev python3-dev
 apt-get install python-pip python3-pip
 
