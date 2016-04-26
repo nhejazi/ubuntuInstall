@@ -18,6 +18,9 @@ C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002)
 First, if on ChromeOS, install Ubuntu with Crouton, using [the directions
 provided
 here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-on-chromebook-with-crouton).
+* Download the latest Crouton script [from here](https://goo.gl/fd3zc).
+* `sudo sh ~/Downloads/crouton -r trusty -t xfce,xiwi -e` (install encrypted chroot)
+* `sudo sh ~/Downloads/crouton -u -n trusty` (update installed chroot)
 
 ### Standard (e.g., on Chromebook):
 I prefer this setup when configuring Ubuntu on a permanent machine.
