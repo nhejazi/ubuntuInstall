@@ -32,11 +32,10 @@ apt-get upgrade
 apt-get install julia
 
 # java install
-apt-get install python-software-properties
-add-apt-repository ppa:webupd8team/java
-apt-get update
-apt-get upgrade
-apt-get install oracle-java8-installer
+#add-apt-repository ppa:webupd8team/java
+#apt-get update
+#apt-get upgrade
+#apt-get install oracle-java8-installer
 
 # scala install
 #wget www.scala-lang.org/files/archive/scala-2.11.7.deb
