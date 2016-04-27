@@ -7,16 +7,15 @@
 #apt-get install sbt
 
 # install R and R-dev
-echo "deb http://cran.fhcrc.org/bin/linux/ubuntu/$(lsb_release -c -s)/" | sudo tee -a /etc/apt/sources.list > /dev/null  
+echo "deb http://cran.fhcrc.org/bin/linux/ubuntu $(lsb_release -c -s)/" | sudo tee -a /etc/apt/sources.list > /dev/null  
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9  
-add-apt-repository -y ppa:marutter/rdev
+add-apt-repository ppa:marutter/rdev
 apt-get update
 apt-get upgrade
 apt-get install r-base r-base-dev
 
 # install Python and dependencies
-apt-get install libbz2-dev libsqlite3-dev libreadline-dev
-apt-get install zlib1g-dev libncurses5-dev libssl-dev libgdbm-dev
+apt-get install libsqlite3-dev libreadline-dev libncurses5-dev libgdbm-dev
 add-apt-repository ppa:fkrull/deadsnakes
 apt-get update
 apt-get upgrade
