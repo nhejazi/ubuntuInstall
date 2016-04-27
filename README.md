@@ -35,6 +35,11 @@ I prefer this setup when configuring Ubuntu on a permanent machine.
 8. `source ~/.bashrc ~/.profile`
 9. `rm -rf ~/freshUbuntu`
 
+_note:_ for an unknown reason, the scripts `_aptLangs.sh` and
+`_aptVim.sh` do not seem to install updated versions of desired
+tools on initial runs (a second run of these scripts fixes this).
+
+
 ### Amazon's EC2 Ubuntu instances:
 I prefer this setup when configuring fresh EC2 instances.
 
