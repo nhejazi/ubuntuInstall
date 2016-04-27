@@ -3,6 +3,7 @@
 # get Vim and NeoVim
 add-apt-repository ppa:neovim-ppa/unstable
 apt-get update
+apt-get upgrade
 apt-get install vim neovim
 
 # setup preferred configuration for Vim
