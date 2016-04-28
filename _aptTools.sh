@@ -8,5 +8,8 @@ dpkg -i pandoc-1.17.0.2-1-amd64.deb
 wget http://github.com/atom/atom/releases/download/v1.7.2/atom-amd64.deb
 dpkg -i atom-amd64.deb
 
+# Jekyll (for blog posts) install via Ruby
+gem install jekyll
+
 # fix installation issues arising from Atom depedencies
 apt-get install -f
