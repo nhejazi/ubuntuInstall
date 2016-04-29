@@ -9,8 +9,8 @@ This workflow has been tested on [Amazon's EC2 Ubuntu
 instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS) as well as
 on my [Acer Chromebook 11 
 C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) 
-(running [Ubuntu Trusty](http://releases.ubuntu.com/14.04/) and an 
-[XFCE desktop](http://www.xfce.org/) installed via 
+(running [Ubuntu 14.04 Trusty Tahr](http://releases.ubuntu.com/14.04/) and
+the [Xfce desktop environment](http://www.xfce.org/), installed via 
 [Crouton](https://github.com/dnschneid/crouton)).
 
 **Directions/Roadmap**
