@@ -3,6 +3,8 @@
 > Customization of fresh Ubuntu installs for Chromebook with
 [Crouton](https://github.com/dnschneid/crouton).
 
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+
 My set of customization scripts for setting Linux Ubuntu to my preferences.
 
 This workflow has been tested on [Amazon's EC2 Ubuntu 
