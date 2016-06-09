@@ -24,10 +24,10 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 * `sudo sh ~/Downloads/crouton -r trusty -t xfce,xiwi -e` (install encrypted chroot)
 * `sudo sh ~/Downloads/crouton -u -n trusty` (update installed chroot)
 
-### Standard (e.g., on Chromebook):
+### Standard (e.g., locally on ChromeOS):
 I prefer this setup when configuring Ubuntu on a permanent machine.
 
-1. `sudo apt-get update`
+1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
 3. `git clone http://github.com/nhejazi/freshUbuntu.git`
 4. `sudo sh ~/freshUbuntu/_aptCore.sh`
@@ -47,16 +47,16 @@ I prefer this setup when configuring fresh EC2 instances.
 
 _N.B._, slight differences from directions given above.
 
-1. `sudo apt-get update`
-2. `sudo apt-get install build-essential ruby git`
+1. `sudo apt-get update && sudo apt-get upgrade`
+2. `sudo apt-get install build-essential git ruby`
 3. `git clone http://github.com/nhejazi/freshUbuntu.git`
 4. `sudo sh ~/freshUbuntu/_aptCore.sh`
 5. `sudo sh ~/freshUbuntu/_aptLangs.sh`
 6. `sudo sh ~/freshUbuntu/_aptVim.sh`
-7. `source ~/.bashrc ~/.profile``
+7. `source ~/.bashrc ~/.profile`
 
-_N.B._, package libraries for Python, Julia, R, and other tools may be 
-installed with scripts from [nhejazi/ezPkgs](https://github.com/nhejazi/ezPkgs).
+_N.B._, package libraries for R, Python, Julia, and other standard tools may be 
+set up via scripts from [nhejazi/myPkgLib](https://github.com/nhejazi/myPkgLib).
 
 __Updates with `apt-get`__
 ```bash
