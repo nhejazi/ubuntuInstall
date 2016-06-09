@@ -15,7 +15,9 @@ C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002)
 the [Xfce desktop environment](http://www.xfce.org/), installed via 
 [Crouton](https://github.com/dnschneid/crouton)).
 
-**Directions/Roadmap**
+---
+
+## Directions/Roadmap
 
 First, if on ChromeOS, install Ubuntu with Crouton, using [the directions
 provided
