@@ -11,9 +11,12 @@ wget http://github.com/jgm/pandoc/releases/download/1.17.1/pandoc-1.17.1-2-amd64
 dpkg -i pandoc-1.17.0.2-1-amd64.deb
 
 # Atom (editor) install
-echo -e "Downloading and installing Atom v.1.8.0 \n PLEASE CHECK that this is the most recent stable release."
-wget http://github.com/atom/atom/releases/download/v1.8.0/atom-amd64.deb
-dpkg -i atom-amd64.deb
+#echo -e "Downloading and installing Atom v.1.8.0 \n PLEASE CHECK that this is the most recent stable release."
+#wget http://github.com/atom/atom/releases/download/v1.8.0/atom-amd64.deb
+#dpkg -i atom-amd64.deb
+add-apt-repository ppa:webupd8team/atom
+apt-get update
+apt-get install atom
 
 # RStudio IDE install
 echo -e "Downloading and installing RStudio v.0,99.902 \n PLEASE CHECK that this is the most recent stable release."
