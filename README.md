@@ -40,8 +40,10 @@ I prefer this setup when configuring Ubuntu on a permanent machine.
 9. `rm -rf ~/freshUbuntu`
 
 _note:_ for an unknown reason, the scripts `_aptLangs.sh` and
-`_aptVim.sh` do not seem to install updated versions of desired
-tools on initial runs (a second run of these scripts fixes this).
+`_aptTools.sh` do not install updated versions of desired tools
+on initial runs if/when there are missing dependencies. Running
+these scripts a second time fixes this issue (a note to this
+effect is provided to the user when these scripts are run).
 
 
 ### Amazon's EC2 Ubuntu instances:
