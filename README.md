@@ -19,12 +19,19 @@ the [Xfce desktop environment](http://www.xfce.org/), installed via
 
 ## Directions/Roadmap
 
+### Linux in ChromeOS with Crouton
+#### Installing a Linux Distribution with Crouton
 First, if on ChromeOS, install Ubuntu with Crouton, using [the directions
 provided
 here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-on-chromebook-with-crouton).
-* Download the latest Crouton script [from here](https://goo.gl/fd3zc).
-* `sudo sh ~/Downloads/crouton -r trusty -t xfce,xiwi -e` (install encrypted chroot)
-* `sudo sh ~/Downloads/crouton -u -n trusty` (update installed chroot)
+  * Download the latest Crouton script [from here](https://goo.gl/fd3zc).
+  * `sudo sh ~/Downloads/crouton -r trusty -t xfce,xiwi -e` (install encrypted chroot)
+  * `sudo sh ~/Downloads/crouton -u -n trusty` (update installed chroot)
+
+#### Tips/Tricks for Running Ubuntu with Crouton
+  * `sudo startxfce4` - starts the Xfce desktop in a separate X11-style window
+  * `sudo enter-chroot -n trusty xiwi -T startxfce4` - start Xfce in a Chrome tab
+  * `sudo enter-chroot -n trusty xiwi -T xterm` - start xterm app in a Chrome tab
 
 ### Standard (e.g., locally on ChromeOS):
 I prefer this setup when configuring Ubuntu on a permanent machine.
