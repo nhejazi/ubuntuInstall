@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ $EUID -ne 0 ]]; then
+  echo "This script must be run as root" 1>&2
+  exit 1
+fi
+
 # sbt installation
 #echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
 #apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
@@ -42,3 +47,4 @@ apt-get install julia
 
 # force install all of the above with dependencies
 apt-get install -f
+echo -e "If any warnings appeared describing dependency errors, run this script a second time to fix."
