@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ $EUID -ne 0 ]]; then
+  echo "This script must be run as root" 1>&2
+  exit 1
+fi
+
 # get core tools with apt-get
 apt-get install build-essential software-properties-common 
 apt-get install wget curl git ruby ruby-dev ruby2.0 ruby2.0-dev
