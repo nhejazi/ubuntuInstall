@@ -5,12 +5,6 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
-# sbt installation
-#echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
-#apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
-#apt-get update
-#apt-get install sbt
-
 # install R and R-dev
 echo "deb http://cran.fhcrc.org/bin/linux/ubuntu $(lsb_release -c -s)/" | sudo tee -a /etc/apt/sources.list > /dev/null  
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9  
@@ -20,7 +14,6 @@ apt-get upgrade
 apt-get install r-base r-base-dev
 
 # install Python and dependencies
-apt-get install libsqlite3-dev libreadline-dev libncurses5-dev libgdbm-dev
 add-apt-repository ppa:fkrull/deadsnakes
 apt-get update
 apt-get upgrade
@@ -34,6 +27,12 @@ add-apt-repository ppa:staticfloat/julia-deps
 apt-get update
 apt-get upgrade
 apt-get install julia
+
+# sbt install
+#echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+#apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
+#apt-get update
+#apt-get install sbt
 
 # java install
 #add-apt-repository ppa:webupd8team/java

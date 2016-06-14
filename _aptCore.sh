@@ -13,9 +13,11 @@ apt-get install m4 apt-transport-https ca-certificates libzmq3 libzmq3-dev
 apt-get install libcurl4-openssl-dev libexpat-dev libncurses-dev libbz2-dev
 apt-get install libcurl4-gnutls-dev libxml2-dev libssl-dev libboost-all-dev
 apt-get install libzmq5-dev libczmq-dev libgeos-dev libgdal-dev zlib1g-dev
+apt-get install libsqlite3-dev libreadline-dev libncurses5-dev libgdbm-dev
 apt-get install libxslt1-dev
 
 
-# setup dotfiles
+# setup my dotfiles
 git clone https://github.com/nhejazi/mydotfiles.git ~/.dotfiles
 sh ~/.dotfiles/_setup.sh
+echo -e "Dotfiles set up as root, so root privileges will be necessary to edit."
