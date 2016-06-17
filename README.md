@@ -68,14 +68,19 @@ _N.B._, slight differences from directions given above.
 6. `sudo sh ~/freshUbuntu/_aptVim.sh`
 7. `source ~/.bashrc ~/.profile`
 
-_N.B._, package libraries for R, Python, Julia, and other standard tools may be 
-set up via scripts from [nhejazi/myPkgLib](https://github.com/nhejazi/myPkgLib).
 
 __Updates with `apt-get`__
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get autoclean && sudo apt-get autoremove
 ```
+
+---
+
+## On Package Libraries
+
+__N.B., package libraries for R, Python, Julia, and other tools I use may be 
+set up via scripts from [nhejazi/myPkgLib](https://github.com/nhejazi/myPkgLib).__
 
 ---
 
