@@ -16,9 +16,14 @@ if [ -e ~/.vim ]; then
   rm -rf ~/.vim; 
 fi
 
+# get and setup config files for using Vim
 git clone https://github.com/nhejazi/myvimconfig.git ~/.vim
 sh ~/.vim/_setup.sh
 cd ~/.vim; sh _update.sh; cd
 
+# get and setup config files for using Neovim
 git clone https://github.com/nhejazi/myneovimconfig.git ~/.config/nvim
 sh ~/.config/nvim/_setup.sh
+
+# get the diff-so-fancy tool for `git diff`
+npm install -g diff-so-fancy
