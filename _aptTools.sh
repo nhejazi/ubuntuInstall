@@ -22,9 +22,9 @@ wget http://github.com/jgm/pandoc/releases/download/1.17.1/pandoc-1.17.1-2-amd64
 dpkg -i pandoc-1.17.0.2-1-amd64.deb
 
 # RStudio IDE install
-echo -e "Downloading and installing RStudio v.0,99.902 \n PLEASE CHECK that this is the most recent stable release."
-wget https://download1.rstudio.org/rstudio-0.99.902-amd64.deb
-dpkg -i rstudio-0.99.902-amd64.deb
+#echo -e "Downloading and installing RStudio v.0,99.902 \n PLEASE CHECK that this is the most recent stable release."
+#wget https://download1.rstudio.org/rstudio-0.99.902-amd64.deb
+#dpkg -i rstudio-0.99.902-amd64.deb
 
 # fix installation issues arising from Atom & RStudio depedencies
 apt-get install -f
