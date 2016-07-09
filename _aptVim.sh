@@ -19,7 +19,6 @@ fi
 # get and setup config files for using Vim
 git clone --recursive https://github.com/nhejazi/myvimconfig.git ~/.vim
 sh ~/.vim/_setup.sh
-cd ~/.vim; sh _update.sh; cd
 
 # get and setup config files for using Neovim
 git clone https://github.com/nhejazi/myneovimconfig.git ~/.config/nvim
