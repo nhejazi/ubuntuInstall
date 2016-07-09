@@ -42,8 +42,8 @@ I prefer this setup when configuring Ubuntu on a permanent machine.
 2. `sudo apt-get install build-essential git`
 3. `git clone http://github.com/nhejazi/freshUbuntu.git`
 4. `sudo sh ~/freshUbuntu/_aptCore.sh`
-5. `sudo sh ~/freshUbuntu/_aptTools.sh`
-6. `sudo sh ~/freshUbuntu/_aptLangs.sh`
+5. `sudo sh ~/freshUbuntu/_aptLangs.sh`
+6. `sudo sh ~/freshUbuntu/_aptTools.sh`
 7. `sudo sh ~/freshUbuntu/_aptVim.sh`
 8. `source ~/.bashrc ~/.profile`
 9. `rm -rf ~/freshUbuntu`
