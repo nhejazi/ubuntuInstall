@@ -35,8 +35,10 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
   * A cheat sheet of important/useful _Crouton_ commands is [available
     here](https://github.com/dnschneid/crouton/wiki/Crouton-Command-Cheat-Sheet).
 
-### Standard (e.g., locally on ChromeOS):
-I prefer this setup when configuring Ubuntu on a permanent machine.
+### Standard Local Setup (e.g., on ChromeOS):
+I prefer this setup when configuring Ubuntu on permanent machines, including on
+Chromebook via [Crouton](https://github.com/dnschneid/crouton) and on a Macbook
+with dual-boot (configured with [rEFIt](http://refit.sourceforge.net/)).
 
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
@@ -55,7 +57,7 @@ a second time fixes this issue (a message to this effect is
 provided to the user when these scripts are run).
 
 
-### Amazon's EC2 Ubuntu instances:
+### Amazon's EC2 Ubuntu Instances:
 I prefer this setup when configuring fresh EC2 instances.
 
 _N.B._, slight differences from directions given above.
