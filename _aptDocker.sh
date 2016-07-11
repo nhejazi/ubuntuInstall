@@ -23,7 +23,7 @@ apt-get update
 apt-cache policy docker-engine
 
 # for Ubuntu Trusty, Wiley, and Xenial, `linux-image-extra` is recommended
-apt-get install linux-image-extra-$(uname -r)  ## MY LINUX KERNEL IS TOO OLD
+apt-get install linux-image-extra-$(uname -r)  ## CHROMEBOOK/CROUTON LINUX KERNEL IS TOO OLD
 apt-get install apparmor  # required for 14.04 Trusty Tahr
 
 # now, finally, install Docker after a quick update
