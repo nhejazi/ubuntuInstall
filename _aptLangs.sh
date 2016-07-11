@@ -45,6 +45,9 @@ apt-get install julia
 #wget www.scala-lang.org/files/archive/scala-2.11.8.deb
 #dpkg -i scala-2.11.8.deb
 
+# latex install
+#apt-get install texlive
+
 # force install all of the above with dependencies
 apt-get install -f
 echo -e "If any warnings appeared describing dependency errors, run this script a second time to fix."
