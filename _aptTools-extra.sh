@@ -5,18 +5,28 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
-# install Node
+# install Node.js and related via PPA
+curl -sL https://deb.nodesource.com/setup | sudo bash -
 apt-get update
-#NODE NODE NODE
+apt-get install nodejs
+#apt-get install npm  ##above includes `npm`
 
-# get the diff-so-fancy tool for `git diff`
-npm install -g diff-so-fancy
+# add some global tools from Node.js
+npm install -g diff-so-fancy  #much prettier git diffs
+npm install -g how2  #use StackOverflow from command line
 
 # RStudio IDE install
-echo -e "Downloading and installing RStudio v.0,99.902 \n PLEASE CHECK that this is the most recent stable release."
+echo "Downloading and installing RStudio v.0,99.902 \n PLEASE CHECK that this is the most recent stable release."
 wget https://download1.rstudio.org/rstudio-0.99.902-amd64.deb
 dpkg -i rstudio-0.99.902-amd64.deb
 
+# add SSH tools for remote access
+apt-get install openssh-server
+
+# add command line tools for Genomics
+apt-get install samtools  #for genomic alignments
+apt-get install bedtoolsi  #for genomic annotation
+
 # fix installation issues arising from Atom & RStudio depedencies
 apt-get install -f
-echo -e "If any warnings appeared describing dependency errors, run this script a second time to fix."
+echo "If any warnings appeared describing dependency errors, run this script a second time to fix."

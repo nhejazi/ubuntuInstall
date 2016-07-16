@@ -19,7 +19,6 @@ heavy:
 			sh $(readlink freshUbuntu)/_aptTools-extra.sh
 			sh $(readlink freshUbuntu)/_aptDocker.sh
 			sh $(readlink freshUbuntu)/_aptVim.sh
-			sh $(readlink freshUbuntu)/_aptGenomics.sh
 			source ~/.bashrc ~/.profile
 
 ec2:

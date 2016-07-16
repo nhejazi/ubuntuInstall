@@ -6,8 +6,8 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # add notice about instructions for Docker on Ubuntu
-echo -e "This script installs Docker based on instructions from \n
-         https://docs.docker.com/engine/installation/linux/ubuntulinux/"
+echo "This script installs Docker based on instructions from
+      https://docs.docker.com/engine/installation/linux/ubuntulinux/"
 
 # update and make sure APT works with HTTPS and CA certificates
 apt-get update

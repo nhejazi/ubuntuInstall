@@ -76,9 +76,8 @@ installation_, for simplicity invoke the `Make` recipe via `sudo make heavy`.
 8. `sudo sh $(readlink freshUbuntu)/_aptTools-extra.sh`
 9. `sudo sh $(readlink freshUbuntu)/_aptDocker.sh`
 10. `sudo sh $(readlink freshUbuntu)/_aptVim.sh`
-11. `sudo sh $(readlink freshUbuntu)/_aptGenomics.sh`
-12. `rm -rf *.deb $(readlink freshUbuntu)`
-13. `source ~/.bashrc ~/.profile`
+11. `rm -rf *.deb $(readlink freshUbuntu)`
+12. `source ~/.bashrc ~/.profile`
 
 **_note:_** the scripts `_aptLangs.sh` and `_aptTools.sh` do
 not install updated versions of desired tools on initial runs

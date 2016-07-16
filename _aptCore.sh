@@ -20,4 +20,4 @@ apt-get install libxslt1-dev libcairo-dev
 # setup my dotfiles
 git clone https://github.com/nhejazi/mydotfiles.git ~/.dotfiles
 sh ~/.dotfiles/_setup.sh
-echo -e "Dotfiles set up as root (root privileges will be necessary to edit)."
+echo "Dotfiles set up as root (root privileges will be necessary to edit)."
