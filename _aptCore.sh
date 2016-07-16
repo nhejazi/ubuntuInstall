@@ -6,7 +6,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # get core tools with apt-get
-apt-get install build-essential software-properties-common 
+apt-get install build-essential software-properties-common
 apt-get install wget curl git ruby ruby-dev ruby2.0 ruby2.0-dev
 apt-get install python-setuptools python-software-properties
 apt-get install m4 apt-transport-https ca-certificates libzmq3 libzmq3-dev

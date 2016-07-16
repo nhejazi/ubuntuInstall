@@ -23,6 +23,3 @@ sh ~/.vim/_setup.sh
 # get and setup config files for using Neovim
 git clone https://github.com/nhejazi/myneovimconfig.git ~/.config/nvim
 sh ~/.config/nvim/_setup.sh
-
-# get the diff-so-fancy tool for `git diff`
-#npm install -g diff-so-fancy
