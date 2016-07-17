@@ -25,7 +25,7 @@ apt-get install openssh-server
 
 # add command line tools for Genomics
 apt-get install samtools  #for genomic alignments
-apt-get install bedtoolsi  #for genomic annotation
+apt-get install bedtools  #for genomic annotation
 
 # fix installation issues arising from Atom & RStudio depedencies
 apt-get install -f
