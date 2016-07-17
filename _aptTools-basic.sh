@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [[ $EUID -ne 0 ]]; then
-  echo "This script must be run as root" 1>&2
-  exit 1
+if [ "$EUID" -ne 0 ]; then
+  echo "This script must be run as root"
+  exit
 fi
 
 # Jekyll (for blog posts) install via Ruby (requires 2.0)
