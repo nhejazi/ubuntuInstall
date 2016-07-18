@@ -21,7 +21,7 @@ wget https://download1.rstudio.org/rstudio-0.99.902-amd64.deb
 dpkg -i rstudio-0.99.902-amd64.deb
 
 # add SSH tools for remote access
-apt-get install openssh-server
+#apt-get install openssh-server
 
 # add command line tools for Genomics
 apt-get install samtools  #for genomic alignments
