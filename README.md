@@ -50,12 +50,12 @@ installation_, for simplicity invoke the Make recipe from the provided `Makefile
 
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
-3. `git clone http://github.com/nhejazi/ubuntu-fresh.git`
-4. `sudo sh $(readlink -f ubuntu-fresh)/_aptCore.sh`
-5. `sudo sh $(readlink -f ubuntu-fresh)/_aptLangs-basic.sh`
-6. `sudo sh $(readlink -f ubuntu-fresh)/_aptTools-basic.sh`
-7. `sudo sh $(readlink -f ubuntu-fresh)/_aptVim.sh`
-8. `rm -rf *.deb $(readlink -f ubuntu-fresh)`
+3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
+4. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh`
+5. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh`
+6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-basic.sh`
+7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
+8. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
 9. `source ~/.bashrc ~/.profile`
 
 
@@ -69,15 +69,15 @@ installation_, for simplicity invoke the Make recipe from the provided `Makefile
 
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
-3. `git clone http://github.com/nhejazi/ubuntu-fresh.git`
-4. `sudo sh ~/freshUbuntu/_aptCore.sh`
-5. `sudo sh $(readlink -f ubuntu-fresh)/_aptLangs-basic.sh`
-6. `sudo sh $(readlink -f ubuntu-fresh)/_aptLangs-extra.sh`
-7. `sudo sh $(readlink -f ubuntu-fresh)/_aptTools-basic.sh`
-8. `sudo sh $(readlink -f ubuntu-fresh)/_aptTools-extra.sh`
-9. `sudo sh $(readlink -f ubuntu-fresh)/_aptDocker.sh`
-10. `sudo sh $(readlink -f ubuntu-fresh)/_aptVim.sh`
-11. `rm -rf *.deb $(readlink -f ubuntu-fresh)`
+3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
+4. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh`
+5. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh`
+6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-extra.sh`
+7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-basic.sh`
+8. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-extra.sh`
+9. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptDocker.sh`
+10. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
+11. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
 12. `source ~/.bashrc ~/.profile`
 
 
@@ -89,13 +89,13 @@ installation_, for simplicity invoke the Make recipe from the provided `Makefile
 
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git ruby`
-3. `git clone http://github.com/nhejazi/ubuntu-fresh.git`
-4. `sudo sh $(readlink -f ubuntu-fresh)/_aptCore.sh`
-5. `sudo sh $(readlink -f ubuntu-fresh)/_aptLangs-basic.sh`
-6. `sudo sh $(readlink -f ubuntu-fresh)/_aptLangs-extra.sh`
-7. `sudo sh $(readlink -f ubuntu-fresh)/_aptDocker.sh`
-8. `sudo sh $(readlink -f ubuntu-fresh)/_aptVim.sh`
-9. `rm -rf *.deb $(readlink -f ubuntu-fresh)`
+3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
+4. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh`
+5. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh`
+6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-extra.sh`
+7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptDocker.sh`
+8. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
+9. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
 10. `source ~/.bashrc ~/.profile`
 
 
