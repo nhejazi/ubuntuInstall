@@ -5,6 +5,7 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
+
 # get core tools with apt-get
 apt-get install build-essential software-properties-common
 apt-get install wget curl git ruby ruby-dev ruby2.0 ruby2.0-dev
