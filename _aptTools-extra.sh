@@ -33,6 +33,6 @@ apt-get install samtools  #for genomic alignments
 apt-get install bedtools  #for genomic annotation
 
 
-# fix installation issues arising from Atom & RStudio depedencies
+# fix installation issues arising from dependencies
 apt-get install -f
 echo "If any warnings appeared describing dependency errors, run this script a second time to fix."
