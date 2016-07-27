@@ -1,5 +1,6 @@
 light:
-			apt-get update && sudo apt-get upgrade
+			apt-get update
+			apt-get upgrade
 			apt-get install build-essential git
 			sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh
 			sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh
@@ -8,7 +9,8 @@ light:
 			source ~/.bashrc ~/.profile
 
 heavy:
-			apt-get update && sudo apt-get upgrade
+			apt-get update
+			apt-get upgrade
 			apt-get install build-essential git
 			sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh
 			sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh
@@ -20,7 +22,8 @@ heavy:
 			source ~/.bashrc ~/.profile
 
 ec2:
-			apt-get update && sudo apt-get upgrade
+			apt-get update
+			apt-get upgrade
 			apt-get install build-essential git ruby
 			sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh
 			sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh

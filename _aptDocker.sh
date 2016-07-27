@@ -5,6 +5,7 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
+
 # add notice about instructions for Docker on Ubuntu
 echo "This script installs Docker based on instructions from
       https://docs.docker.com/engine/installation/linux/ubuntulinux/"
