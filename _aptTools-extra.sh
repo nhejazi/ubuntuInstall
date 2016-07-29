@@ -21,6 +21,7 @@ dpkg -i rstudio-0.99.902-amd64.deb
 # add some global tools from Node.js
 npm install -g diff-so-fancy  #much prettier git diffs
 npm install -g how2  #use StackOverflow from command line
+npm install -g hpm-cli  #package/plug-in manager for Hyperterm
 
 
 # add SSH tools for remote access
