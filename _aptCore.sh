@@ -9,7 +9,7 @@ fi
 # get core tools with apt-get
 apt-get install build-essential software-properties-common
 apt-get install wget curl git ruby ruby-dev ruby2.0 ruby2.0-dev
-apt-get install python-setuptools python-software-properties
+apt-get install python-setuptools python-software-properties bash-completion
 apt-get install m4 apt-transport-https ca-certificates libzmq3 libzmq3-dev
 apt-get install libcurl4-openssl-dev libexpat-dev libncurses-dev libbz2-dev
 apt-get install libcurl4-gnutls-dev libxml2-dev libssl-dev libboost-all-dev

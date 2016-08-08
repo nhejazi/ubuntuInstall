@@ -6,6 +6,7 @@ light:
 			sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh
 			sh $(readlink -f ~/ubuntu-fresh)/_aptTools-basic.sh
 			sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh
+			sh $(readlink -f ~/ubuntu-fresh)/_aptXfce.sh
 			source ~/.bashrc ~/.profile
 
 heavy:
