@@ -7,15 +7,48 @@ fi
 
 
 # get core tools with apt-get
-apt-get install build-essential software-properties-common
-apt-get install wget curl git ruby ruby-dev ruby2.0 ruby2.0-dev
-apt-get install python-setuptools python-software-properties bash-completion
-apt-get install m4 apt-transport-https ca-certificates libzmq3 libzmq3-dev
-apt-get install libcurl4-openssl-dev libexpat-dev libncurses-dev libbz2-dev
-apt-get install libcurl4-gnutls-dev libxml2-dev libssl-dev libboost-all-dev
-apt-get install libzmq5-dev libczmq-dev libgeos-dev libgdal-dev zlib1g-dev
-apt-get install libsqlite3-dev libreadline-dev libncurses5-dev libgdbm-dev
-apt-get install libxslt1-dev libcairo-dev
+apt-get install build-essential
+apt-get install software-properties-common
+apt-get install wget
+apt-get install curl
+apt-get install git
+apt-get install ruby
+apt-get install ruby-dev
+apt-get install ruby2.0
+apt-get install ruby2.0-dev
+apt-get install python-setuptools
+apt-get install python-software-properties
+apt-get install m4
+apt-get install apt-transport-https
+apt-get install ca-certificates
+apt-get install libzmq3
+apt-get install libzmq3-dev
+apt-get install libcurl4-openssl-dev
+apt-get install libexpat-dev
+apt-get install libncurses-dev
+apt-get install libbz2-dev
+apt-get install libcurl4-gnutls-dev
+apt-get install libxml2-dev
+apt-get install libssl-dev
+apt-get install libboost-all-dev
+apt-get install libzmq5-dev
+apt-get install libczmq-dev
+apt-get install libgeos-dev
+apt-get install libgdal-dev
+apt-get install zlib1g-dev
+apt-get install libsqlite3-dev
+apt-get install libreadline-dev
+apt-get install libncurses5-dev
+apt-get install libgdbm-dev
+apt-get install libxslt1-dev
+apt-get install libcairo-dev
+
+
+# install zsh, bash/zsh completions, and oh-my-zsh
+apt-get install bash-completion
+apt-get install zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#chsh -s $(which zsh) $(whoami)  # keep bash as the default shell for now
 
 
 # setup my dotfiles

@@ -10,12 +10,13 @@ fi
 add-apt-repository ppa:neovim-ppa/unstable
 apt-get update
 apt-get upgrade
-apt-get install vim neovim
+apt-get install vim
+apt-get install neovim
 
 
 # setup preferred configuration for Vim
 if [ -e ~/.vim ]; then
-  rm -rf ~/.vim;
+  mv -f ~/.vim ~/.vim_orig;
 fi
 
 

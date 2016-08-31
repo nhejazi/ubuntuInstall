@@ -6,26 +6,24 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-# install zsh, completions, and oh-my-zsh
-apt-get install zshe
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-#chsh -s $(which zsh) $(whoami)  # keep bash as the default shell for now
-
-
 # install R and R-dev
 echo "deb http://cran.fhcrc.org/bin/linux/ubuntu $(lsb_release -c -s)/" | sudo tee -a /etc/apt/sources.list > /dev/null  
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9  
 add-apt-repository ppa:marutter/rdev
 apt-get update
-apt-get install r-base r-base-dev
+apt-get install r-base
+apt-get install r-base-dev
 
 
 # install Python and dependencies
 add-apt-repository ppa:fkrull/deadsnakes
 apt-get update
-apt-get install python2.7 python3.5
-apt-get install python-dev python3-dev
-apt-get install python-pip python3-pip
+apt-get install python2.7
+apt-get install python-dev
+apt-get install python-pip
+apt-get install python3.5
+apt-get install python3-dev
+apt-get install python3-pip
 
 
 # julia install

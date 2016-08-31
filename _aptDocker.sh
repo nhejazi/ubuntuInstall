@@ -13,7 +13,8 @@ echo "This script installs Docker based on instructions from
 
 # update and make sure APT works with HTTPS and CA certificates
 apt-get update
-apt-get install apt-transport-https ca-certificates
+apt-get install apt-transport-https
+apt-get install ca-certificates
 
 
 # add the GPG key for Docker
