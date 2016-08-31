@@ -6,6 +6,12 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
+# install zsh, completions, and oh-my-zsh
+apt-get install zshe
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#chsh -s $(which zsh) $(whoami)  # keep bash as the default shell for now
+
+
 # install R and R-dev
 echo "deb http://cran.fhcrc.org/bin/linux/ubuntu $(lsb_release -c -s)/" | sudo tee -a /etc/apt/sources.list > /dev/null  
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9  
