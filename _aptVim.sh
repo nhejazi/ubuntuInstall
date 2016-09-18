@@ -14,15 +14,21 @@ apt-get install vim
 apt-get install neovim
 
 
-# setup preferred configuration for Vim
+# preserve any existing Vim configuration files
 if [ -e ~/.vim ]; then
   mv -f ~/.vim ~/.vim_orig;
 fi
 
 
 # get and setup config files for using Vim
-git clone --recursive https://github.com/nhejazi/myvimconfig.git ~/.vim
+git clone https://github.com/nhejazi/myvimconfig.git ~/.vim
 sh ~/.vim/_setup.sh
+
+
+# preserve any existing Neovim configuration files
+if [ -e ~/.config/nvim ]; then
+  mv -f ~/.config/nvim ~/.config/nvim_orig;
+fi
 
 
 # get and setup config files for using Neovim

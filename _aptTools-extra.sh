@@ -6,6 +6,12 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
+# zsh, zsh completions, and oh-my-zsh
+apt-get install zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#chsh -s $(which zsh) $(whoami)  # keep bash as default shell for now...
+
+
 # Pandoc (markup tool) install
 echo "Downloading and installing Pandoc v.1.17.1-2 \n PLEASE CHECK that this is the most recent stable release."
 wget http://github.com/jgm/pandoc/releases/download/1.17.1/pandoc-1.17.1-2-amd64.deb

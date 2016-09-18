@@ -44,11 +44,8 @@ apt-get install libxslt1-dev
 apt-get install libcairo-dev
 
 
-# install zsh, bash/zsh completions, and oh-my-zsh
+# add bash completions
 apt-get install bash-completion
-apt-get install zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-#chsh -s $(which zsh) $(whoami)  # keep bash as the default shell for now
 
 
 # setup my dotfiles

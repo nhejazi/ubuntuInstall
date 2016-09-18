@@ -1,11 +1,13 @@
 # Fresh Linux Ubuntu
 
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+
 > Customization of fresh Ubuntu installs (including for Chromebook with
 [Crouton](https://github.com/dnschneid/crouton))
 
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-
-My set of customization scripts for setting Linux Ubuntu to my preferences.
+My set of customization scripts for setting Linux Ubuntu to my preferences. This
+is a collection of scripts that set up three different configurations of Ubuntu
+machines, written specifically for machines with varying resource constraints.
 
 This workflow has been tested on [Amazon's EC2 Ubuntu
 instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS), my [Acer
@@ -72,7 +74,7 @@ I prefer this setup when configuring Ubuntu on permanent machines with fairly
 unconstrained resources (e.g., on a dual-booting MacBook Pro configured with
 [rEFIt](http://refit.sourceforge.net/)).
 
-The step-by-step procedure is given below in case any problems arise during the
+_The step-by-step procedure is given below in case any problems arise during the
 installation_, for simplicity invoke the Make recipe from the provided
 `Makefile` via `sudo make heavy`.
 
@@ -93,7 +95,7 @@ installation_, for simplicity invoke the Make recipe from the provided
 ### Amazon's EC2 Ubuntu Instances:
 I prefer this setup when configuring fresh EC2 instances.
 
-The step-by-step procedure is given below in case any problems arise during the
+_The step-by-step procedure is given below in case any problems arise during the
 installation_, for simplicity invoke the Make recipe from the provided
 `Makefile` via `sudo make ec2`.
 
@@ -109,11 +111,6 @@ installation_, for simplicity invoke the Make recipe from the provided
 10. `source ~/.bashrc ~/.profile`
 
 
-**_N.B.,_** the scripts `_aptLangs.sh` and `_aptTools.sh` do not install updated
-versions of desired tools on initial runs if there are missing dependencies.
-Running these scripts a second time appears to fix this issue.
-
-
 ### Updates with `apt-get`
 ```bash
 sudo apt-get update && sudo apt-get upgrade
@@ -122,10 +119,10 @@ sudo apt-get autoclean && sudo apt-get autoremove
 
 ---
 
-## On Package Libraries
+## Package Libraries
 
-__N.B., package libraries for R, Python, Julia, and other tools I use may be set
-up via scripts from [nhejazi/myPkgLib](https://github.com/nhejazi/myPkgLib).__
+* __[nhejazi/myPkgLib](https://github.com/nhejazi/myPkgLib)__ - a working list
+    of packages to be used alongside the core software in this repo.
 
 ---
 
