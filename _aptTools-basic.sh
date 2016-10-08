@@ -23,10 +23,10 @@ apt-get update
 apt-get install atom
 
 
-# HyperTerm (terminal emulator) install
-echo "Downloading and installing HyperTemr v.0.7.1 \n PLEASE CHECK that this is the most recent stable release."
-wget http://github.com/zeit/hyperterm/releases/download/v0.7.1/hyperterm-0.7.1.deb
-dpkg -i hyperterm-0.7.1.deb
+# Hyper (previously HyperTerm) terminal emulator install
+echo "Installing Hyper (terminal) v.0.8.1 \n PLEASE CHECK that this is the most recent stable release."
+wget http://github.com/zeit/hyper/releases/download/0.8.1/hyper-0.8.1-amd64.deb
+dpkg -i hyper-0.8.1-amd64.deb
 
 
 # fix installation issues arising from dependencies
