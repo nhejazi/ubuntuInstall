@@ -13,13 +13,13 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 
 # Pandoc (markup tool) install
-echo "Downloading and installing Pandoc v.1.17.1-2 \n PLEASE CHECK that this is the most recent stable release."
+echo "Installing Pandoc v.1.17.1-2 \n PLEASE CHECK that this is the most recent stable release."
 wget http://github.com/jgm/pandoc/releases/download/1.17.1/pandoc-1.17.1-2-amd64.deb
 dpkg -i pandoc-1.17.1-2-amd64.deb
 
 
 # RStudio IDE install
-echo "Downloading and installing RStudio v.0,99.902 \n PLEASE CHECK that this is the most recent stable release."
+echo "Installing RStudio v.0,99.902 \n PLEASE CHECK that this is the most recent stable release."
 wget https://download1.rstudio.org/rstudio-0.99.902-amd64.deb
 dpkg -i rstudio-0.99.902-amd64.deb
 
