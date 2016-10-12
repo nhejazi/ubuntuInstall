@@ -48,6 +48,10 @@ apt-get install libcairo-dev
 apt-get install bash-completion
 
 
+# add The Silver Searcher
+apt-get install silversearcher-ag
+
+
 # setup my dotfiles
 git clone https://github.com/nhejazi/mydotfiles.git ~/.dotfiles
 sh ~/.dotfiles/_setup.sh
