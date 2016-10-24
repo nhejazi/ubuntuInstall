@@ -24,10 +24,10 @@ apt-get install oracle-java8-installer
 
 
 # scala install
-wget www.scala-lang.org/files/archive/scala-2.11.8.deb
-dpkg -i scala-2.11.8.deb
+wget www.scala-lang.org/files/archive/scala-2.12.0.deb
+dpkg -i scala-2.12.0.deb
 
 
 # force install all of the above with dependencies
 apt-get install -f
-echo "If any warnings appeared describing dependency errors, run this script a second time to fix."
+echo "If any dependency warnings appeared, run this script a second time."

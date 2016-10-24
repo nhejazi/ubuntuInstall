@@ -54,5 +54,5 @@ apt-get install silversearcher-ag
 
 # setup my dotfiles
 git clone https://github.com/nhejazi/mydotfiles.git ~/.dotfiles
-sh ~/.dotfiles/_setup.sh
-echo "Dotfiles set up as root (root privileges will be necessary to edit)."
+sh ~/.dotfiles/_linkDots.sh
+echo "Dotfiles set up under root; root privileges will be needed to edit them."

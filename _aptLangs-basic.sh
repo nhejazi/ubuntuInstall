@@ -35,4 +35,4 @@ apt-get install julia
 
 # force install all of the above with dependencies
 apt-get install -f
-echo "If any warnings appeared describing dependency errors, run this script a second time to fix."
+echo "If any dependency warnings appeared, run this script a second time."
