@@ -26,7 +26,7 @@ apt-get install atom
 # Hyper terminal emulator install
 echo "Installing Hyper (terminal) v.0.8.3 \n PLEASE CHECK that this is the most recent stable release."
 wget http://github.com/zeit/hyper/releases/download/0.8.3/hyper-0.8.3-amd64-linux.deb
-dpkg -i hyper-0.8.3-amd64.deb
+dpkg -i hyper-0.8.3-amd64-linux.deb
 
 
 # fix installation issues arising from dependencies
