@@ -5,6 +5,10 @@
 > Customization of fresh Ubuntu installs (including for Chromebook with
 [Crouton](https://github.com/dnschneid/crouton))
 
+---
+
+## Summary
+
 My set of customization scripts for setting Linux Ubuntu to my preferences. This
 is a collection of scripts that set up three different configurations of Ubuntu
 machines, written specifically for machines with varying resource constraints.
@@ -40,16 +44,16 @@ here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-
 
 ---
 
-## Directions/Roadmap
+## Directions
 
-### Lightweight Local Setup (e.g., on ChromeOS w/ Crouton):
+### Lightweight Local Setup (e.g., Chromebook w/ Crouton):
 I prefer this setup when configuring Ubuntu on permanent machines with limited
 available resources (e.g., on Chromebook via
 [Crouton](https://github.com/dnschneid/crouton)).
 
 _The step-by-step procedure is given below in case any problems arise during the
 installation_, for simplicity invoke the Make recipe from the provided
-`Makefile` via `sudo make light`.
+`Makefile` via `make light`.
 
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
@@ -69,14 +73,14 @@ consequences. It is only appropriate for use with Xubuntu and the Xfce desktop
 environment.
 
 
-### Heavyweight Local Setup (e.g., on MacBook w/ rEFIt):
+### Heavyweight Local Setup (e.g., MacBook Pro w/ rEFIt):
 I prefer this setup when configuring Ubuntu on permanent machines with fairly
 unconstrained resources (e.g., on a dual-booting MacBook Pro configured with
 [rEFIt](http://refit.sourceforge.net/)).
 
 _The step-by-step procedure is given below in case any problems arise during the
 installation_, for simplicity invoke the Make recipe from the provided
-`Makefile` via `sudo make heavy`.
+`Makefile` via `make heavy`.
 
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
@@ -97,18 +101,17 @@ I prefer this setup when configuring fresh EC2 instances.
 
 _The step-by-step procedure is given below in case any problems arise during the
 installation_, for simplicity invoke the Make recipe from the provided
-`Makefile` via `sudo make ec2`.
+`Makefile` via `make ec2`.
 
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git ruby`
 3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
 4. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh`
 5. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh`
-6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-extra.sh`
-7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptDocker.sh`
-8. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
-9. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
-10. `source ~/.bashrc ~/.profile`
+6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-extra.sh`
+7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
+8. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
+9. `source ~/.bashrc ~/.profile`
 
 
 ### Updates with `apt-get`

@@ -18,15 +18,16 @@ dpkg -i pandoc-1.17.2-1-amd64.deb
 
 
 # RStudio IDE install
-echo "Installing RStudio v.0.99.903 \n PLEASE CHECK that this is the most recent stable release."
-wget https://download1.rstudio.org/rstudio-0.99.903-amd64.deb
-dpkg -i rstudio-0.99.903-amd64.deb
+echo "Installing RStudio IDE v.1.0.44 \n PLEASE CHECK that this is the most recent stable release."
+wget https://download1.rstudio.org/rstudio-1.0.44-amd64.deb
+dpkg -i rstudio-1.0.44-amd64.deb
 
 
-# add some global tools from Node.js
-npm install -g diff-so-fancy  #much prettier git diffs
-npm install -g how2  #use StackOverflow from command line
-npm install -g hpm-cli  #package/plug-in manager for Hyperterm
+# RStudio Server install
+echo "Installing RStudio Server v.1.0.44 \n PLEASE CHECK that this is the most recent stable release."
+apt-get install gdebi-core
+wget https://download2.rstudio.org/rstudio-server-1.0.44-amd64.deb
+gdebi rstudio-server-1.0.44-amd64.deb
 
 
 # fix installation issues arising from dependencies

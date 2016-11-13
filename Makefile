@@ -1,34 +1,31 @@
 light:
-			apt-get update
-			apt-get upgrade
-			apt-get install build-essential git
-			sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptTools-basic.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptXfce.sh
-			source ~/.bashrc ~/.profile
+	sudo apt-get update
+	sudo apt-get upgrade
+	sudo apt-get install build-essential git
+	sudo sh _aptCore.sh
+	sudo sh _aptLangs-basic.sh
+	sudo sh _aptTools-basic.sh
+	sudo sh _aptVim.sh
+	sudo sh _aptXfce.sh
 
 heavy:
-			apt-get update
-			apt-get upgrade
-			apt-get install build-essential git
-			sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-extra.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptTools-basic.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptTools-extra.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptDocker.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh
-			source ~/.bashrc ~/.profile
+	sudo apt-get update
+	sudo apt-get upgrade
+	sudo apt-get install build-essential git
+	sudo sh _aptCore.sh
+	sudo sh _aptLangs-basic.sh
+	sudo sh _aptLangs-extra.sh
+	sudo sh _aptTools-basic.sh
+	sudo sh _aptTools-extra.sh
+	sudo sh _aptDocker.sh
+	sudo sh _aptVim.sh
 
 ec2:
-			apt-get update
-			apt-get upgrade
-			apt-get install build-essential git ruby
-			sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-extra.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptDocker.sh
-			sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh
-			source ~/.bashrc ~/.profile
+	sudo apt-get update
+	sudo apt-get upgrade
+	sudo apt-get install build-essential git ruby
+	sudo sh _aptCore.sh
+	sudo sh _aptLangs-basic.sh
+	sudo sh _aptLangs-extra.sh
+	sudo sh _aptDocker.sh
+	sudo sh _aptVim.sh

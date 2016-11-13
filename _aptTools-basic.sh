@@ -29,6 +29,12 @@ wget http://github.com/zeit/hyper/releases/download/0.8.3/hyper-0.8.3-amd64-linu
 dpkg -i hyper-0.8.3-amd64-linux.deb
 
 
+# add some global tools from Node.js
+npm install -g diff-so-fancy  #much prettier git diffs
+npm install -g how2  #use StackOverflow from command line
+npm install -g hpm-cli  #package/plug-in manager for Hyperterm
+
+
 # fix installation issues arising from dependencies
 apt-get install -f
 echo "If any dependency warnings appeared, run this script a second time."
