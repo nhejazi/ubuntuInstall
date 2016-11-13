@@ -7,49 +7,49 @@ fi
 
 
 # get core tools with apt-get
-apt-get install build-essential
-apt-get install software-properties-common
-apt-get install wget
-apt-get install curl
-apt-get install git
-apt-get install ruby
-apt-get install ruby-dev
-apt-get install ruby2.0
-apt-get install ruby2.0-dev
-apt-get install python-setuptools
-apt-get install python-software-properties
-apt-get install m4
-apt-get install apt-transport-https
-apt-get install ca-certificates
-apt-get install libzmq3
-apt-get install libzmq3-dev
-apt-get install libcurl4-openssl-dev
-apt-get install libexpat-dev
-apt-get install libncurses-dev
-apt-get install libbz2-dev
-apt-get install libcurl4-gnutls-dev
-apt-get install libxml2-dev
-apt-get install libssl-dev
-apt-get install libboost-all-dev
-apt-get install libzmq5-dev
-apt-get install libczmq-dev
-apt-get install libgeos-dev
-apt-get install libgdal-dev
-apt-get install zlib1g-dev
-apt-get install libsqlite3-dev
-apt-get install libreadline-dev
-apt-get install libncurses5-dev
-apt-get install libgdbm-dev
-apt-get install libxslt1-dev
-apt-get install libcairo-dev
+apt-get install -y build-essential
+apt-get install -y software-properties-common
+apt-get install -y wget
+apt-get install -y curl
+apt-get install -y git
+apt-get install -y ruby
+apt-get install -y ruby-dev
+apt-get install -y ruby2.0
+apt-get install -y ruby2.0-dev
+apt-get install -y python-setuptools
+apt-get install -y python-software-properties
+apt-get install -y m4
+apt-get install -y apt-transport-https
+apt-get install -y ca-certificates
+apt-get install -y libzmq3
+apt-get install -y libzmq3-dev
+apt-get install -y libcurl4-openssl-dev
+apt-get install -y libexpat-dev
+apt-get install -y libncurses-dev
+apt-get install -y libbz2-dev
+apt-get install -y libcurl4-gnutls-dev
+apt-get install -y libxml2-dev
+apt-get install -y libssl-dev
+apt-get install -y libboost-all-dev
+apt-get install -y libzmq5-dev
+apt-get install -y libczmq-dev
+apt-get install -y libgeos-dev
+apt-get install -y libgdal-dev
+apt-get install -y zlib1g-dev
+apt-get install -y libsqlite3-dev
+apt-get install -y libreadline-dev
+apt-get install -y libncurses5-dev
+apt-get install -y libgdbm-dev
+apt-get install -y libxslt1-dev
+apt-get install -y libcairo-dev
 
 
 # add bash completions
-apt-get install bash-completion
+apt-get install -y bash-completion
 
 
 # add The Silver Searcher
-apt-get install silversearcher-ag
+apt-get install -y silversearcher-ag
 
 
 # setup my dotfiles

@@ -6,9 +6,12 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-# zsh, zsh completions, and oh-my-zsh
-apt-get install zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# zsh + zsh completions
+apt-get install -y zsh
+
+
+# for setting up oh-my-zsh dotfile collection...but not automatically
+#sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 
 # Pandoc (markup tool) install
@@ -25,11 +28,11 @@ dpkg -i rstudio-1.0.44-amd64.deb
 
 # RStudio Server install
 echo "Installing RStudio Server v.1.0.44 \n PLEASE CHECK that this is the most recent stable release."
-apt-get install gdebi-core
+apt-get install -y gdebi-core
 wget https://download2.rstudio.org/rstudio-server-1.0.44-amd64.deb
 gdebi rstudio-server-1.0.44-amd64.deb
 
 
 # fix installation issues arising from dependencies
-apt-get install -f
+apt-get install -f -y
 echo "If any dependency warnings appeared, run this script a second time."

@@ -5,10 +5,10 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
-apt-get update
-apt-get upgrade
+apt-get update -y
+apt-get upgrade -y
 
-apt-get install build-essential git ruby
+apt-get install -y build-essential git ruby
 
 sh _aptCore.sh
 sh _aptLangs-basic.sh

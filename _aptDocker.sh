@@ -12,9 +12,9 @@ echo "This script installs Docker based on instructions from
 
 
 # update and make sure APT works with HTTPS and CA certificates
-apt-get update
-apt-get install apt-transport-https
-apt-get install ca-certificates
+apt-get update -y
+apt-get install -y apt-transport-https
+apt-get install -y ca-certificates
 
 
 # add the GPG key for Docker
@@ -26,15 +26,15 @@ echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > '/etc/apt/sou
 
 
 # update and make sure APT pulls from the correct repository for Docker
-apt-get update
+apt-get update -y
 apt-cache policy docker-engine
 
 
 # for Ubuntu Trusty, Wiley, and Xenial, `linux-image-extra` is recommended
-apt-get install linux-image-extra-$(uname -r)  ## CHROMEBOOK/CROUTON LINUX KERNEL IS TOO OLD
-apt-get install apparmor  # required for 14.04 Trusty Tahr
+apt-get install -y linux-image-extra-$(uname -r)  # CHROMEBOOK LINUX KERNEL TOO OLD
+apt-get install -y apparmor  # required for 14.04 Trusty Tahr
 
 
 # now, finally, install Docker after a quick update
-apt-get update
-apt-get install docker-engine
+apt-get update -y
+apt-get install -y docker-engine

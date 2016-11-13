@@ -8,10 +8,10 @@ fi
 
 # get Vim and NeoVim
 add-apt-repository ppa:neovim-ppa/unstable
-apt-get update
-apt-get upgrade
-apt-get install vim
-apt-get install neovim
+apt-get update -y
+apt-get upgrade -y
+apt-get install -y vim
+apt-get install -y neovim
 
 
 # preserve any existing Vim configuration files

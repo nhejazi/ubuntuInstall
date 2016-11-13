@@ -7,20 +7,20 @@ fi
 
 
 # Jekyll (for blog posts) install via Ruby (requires 2.0)
-gem2.0 install jekyll
+gem2.0 install -y jekyll
 
 
 # install NodeJS and related (e.g., npm) via PPA
 apt-key adv --keyserver keyserver.ubuntu.com --recv 68576280
 apt-add-repository "deb https://deb.nodesource.com/node_5.x $(lsb_release -sc) main"
-apt-get update
-apt-get install nodejs
+apt-get update -y
+apt-get install -y nodejs
 
 
 # Atom (editor) install
 add-apt-repository ppa:webupd8team/atom
-apt-get update
-apt-get install atom
+apt-get update -y
+apt-get install -y atom
 
 
 # Hyper terminal emulator install
@@ -36,5 +36,5 @@ npm install -g hpm-cli  #package/plug-in manager for Hyperterm
 
 
 # fix installation issues arising from dependencies
-apt-get install -f
+apt-get install -f -y
 echo "If any dependency warnings appeared, run this script a second time."
