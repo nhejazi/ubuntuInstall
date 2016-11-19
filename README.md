@@ -26,30 +26,13 @@ installed via [rEFIt](http://refit.sourceforge.net/)).
 
 ---
 
-## Linux with _Crouton_ on ChromeOS
-
-### Installing a Linux Distribution with _Crouton_
-Firstly, install Ubuntu on ChromeOS with _Crouton_, using [the directions
-here](https://www.linux.com/learn/tutorials/795730-how-to-easily-install-ubuntu-on-chromebook-with-crouton).
-  * Download the latest _Crouton_ script [from here](https://goo.gl/fd3zc).
-  * `sudo sh ~/Downloads/crouton -r trusty -t xfce,xiwi -e` (install encrypted chroot)
-  * `sudo sh ~/Downloads/crouton -u -n trusty` (update installed chroot)
-
-### Tips/Tricks for Running Ubuntu with _Crouton_
-  * `sudo startxfce4` - starts the Xfce desktop in a separate X11-style window
-  * `sudo enter-chroot -n trusty xiwi -T startxfce4` - start Xfce in a Chrome tab
-  * `sudo enter-chroot -n trusty xiwi -T xterm` - start xterm app in a Chrome tab
-  * A cheat sheet of important/useful _Crouton_ commands is [available
-    here](https://github.com/dnschneid/crouton/wiki/Crouton-Command-Cheat-Sheet).
-
----
-
 ## Directions
 
 ### Lightweight Local Setup (e.g., Chromebook w/ Crouton):
-I prefer this setup when configuring Ubuntu on permanent machines with limited
-available resources (e.g., on Chromebook via
-[Crouton](https://github.com/dnschneid/crouton)).
+I prefer this setup when configuring Ubuntu on machines with limited resources
+(e.g., on Chromebook with [Crouton](https://github.com/dnschneid/crouton)). For
+directions on installing/using _Crouton_ with Chromebook, see file `Crouton.md`
+in this repository.
 
 _The step-by-step procedure is given below in case any problems arise during the
 installation_, for simplicity invoke the Make recipe from the provided
@@ -64,8 +47,6 @@ installation_, for simplicity invoke the Make recipe from the provided
 7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
 8. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptXfce.sh`
 9. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
-10. `source ~/.bashrc ~/.profile`
-
 
 **_N.B.,_** the script `_aptXfce.sh` does not add any critical software, only
 minor interface edits, thus skipping this step should have no undesirable
@@ -74,7 +55,7 @@ environment.
 
 
 ### Heavyweight Local Setup (e.g., MacBook Pro w/ rEFIt):
-I prefer this setup when configuring Ubuntu on permanent machines with fairly
+I prefer this setup when configuring Ubuntu on machines with fairly
 unconstrained resources (e.g., on a dual-booting MacBook Pro configured with
 [rEFIt](http://refit.sourceforge.net/)).
 
@@ -93,11 +74,10 @@ installation_, for simplicity invoke the Make recipe from the provided
 9. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptDocker.sh`
 10. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
 11. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
-12. `source ~/.bashrc ~/.profile`
 
 
 ### Amazon's EC2 Ubuntu Instances:
-I prefer this setup when configuring fresh EC2 instances.
+I prefer this setup when configuring fresh EC2 Ubuntu instances.
 
 _The step-by-step procedure is given below in case any problems arise during the
 installation_, for simplicity invoke the Make recipe from the provided
@@ -111,13 +91,12 @@ installation_, for simplicity invoke the Make recipe from the provided
 6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-extra.sh`
 7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
 8. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
-9. `source ~/.bashrc ~/.profile`
 
 
 ### Updates with `apt-get`
 ```bash
 sudo apt-get update && sudo apt-get upgrade
-sudo apt-get autoclean && sudo apt-get autoremove
+sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove
 ```
 
 ---
