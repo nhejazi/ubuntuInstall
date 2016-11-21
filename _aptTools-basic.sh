@@ -31,6 +31,7 @@ dpkg -i hyper-0.8.3-amd64-linux.deb
 
 # asciinema (terminal recording tool) install
 apt-add-repository ppa:zanchey/asciinema
+apt-get update -y
 apt-get install -y asciinema
 
 
