@@ -30,9 +30,9 @@ installed via [rEFIt](http://refit.sourceforge.net/)).
 
 ### Lightweight Local Setup (e.g., Chromebook w/ Crouton):
 I prefer this setup when configuring Ubuntu on machines with limited resources
-(e.g., on Chromebook with [Crouton](https://github.com/dnschneid/crouton)). For
-directions on installing/using _Crouton_ with Chromebook, see file `Crouton.md`
-in this repository.
+(e.g., on Chromebook with [Crouton](https://github.com/dnschneid/crouton)).
+__For directions on installing Ubuntu on your Chromebook using _Crouton_, see
+file `Crouton.md` in this repository.__
 
 _The step-by-step procedure is given below in case any problems arise during the
 installation_, for simplicity invoke the Make recipe from the provided

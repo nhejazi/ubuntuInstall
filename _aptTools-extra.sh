@@ -10,11 +10,11 @@ fi
 apt-get install -y zsh
 
 
-# for setting up oh-my-zsh dotfile collection...but not automatically
+# set up oh-my-zsh dotfile collection...but not automatically
 #sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 
-# Pandoc (markup tool) install
+# pandoc (markup conversion tool) install
 echo "Installing Pandoc v.1.17.2-1 \n PLEASE CHECK that this is the most recent stable release."
 wget http://github.com/jgm/pandoc/releases/download/1.17.2/pandoc-1.17.2-1-amd64.deb
 dpkg -i pandoc-1.17.2-1-amd64.deb

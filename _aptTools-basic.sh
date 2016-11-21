@@ -6,11 +6,11 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-# Jekyll (for blog posts) install via Ruby (requires 2.0)
+# Jekyll (blog tool) install via Ruby (requires 2.0)
 gem2.0 install -y jekyll
 
 
-# install NodeJS and related (e.g., npm) via PPA
+# NodeJS install
 apt-key adv --keyserver keyserver.ubuntu.com --recv 68576280
 apt-add-repository "deb https://deb.nodesource.com/node_5.x $(lsb_release -sc) main"
 apt-get update -y
@@ -23,10 +23,15 @@ apt-get update -y
 apt-get install -y atom
 
 
-# Hyper terminal emulator install
+# Hyper (terminal emulator) install
 echo "Installing Hyper (terminal) v.0.8.3 \n PLEASE CHECK that this is the most recent stable release."
 wget http://github.com/zeit/hyper/releases/download/0.8.3/hyper-0.8.3-amd64-linux.deb
 dpkg -i hyper-0.8.3-amd64-linux.deb
+
+
+# asciinema (terminal recording tool) install
+apt-add-repository ppa:zanchey/asciinema
+apt-get install -y asciinema
 
 
 # add some global tools from Node.js
