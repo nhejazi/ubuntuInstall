@@ -18,6 +18,7 @@ apt-get install -y ruby2.0
 apt-get install -y ruby2.0-dev
 apt-get install -y python-setuptools
 apt-get install -y python-software-properties
+apt-get install -y cmake
 apt-get install -y m4
 apt-get install -y apt-transport-https
 apt-get install -y ca-certificates
