@@ -24,9 +24,9 @@ apt-get install -y atom
 
 
 # Hyper (terminal emulator) install
-echo "Installing Hyper (terminal) v.0.8.3 \n PLEASE CHECK that this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/0.8.3/hyper-0.8.3-amd64-linux.deb
-dpkg -i hyper-0.8.3-amd64-linux.deb
+echo "Installing Hyper (terminal) v.1.0.0 \n PLEASE CHECK that this is the most recent stable release."
+wget http://github.com/zeit/hyper/releases/download/1.0.0/hyper-1.0.0.deb
+dpkg -i hyper-1.0.0.deb
 
 
 # asciinema (terminal recording tool) install
