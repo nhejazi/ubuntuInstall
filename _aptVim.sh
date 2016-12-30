@@ -7,10 +7,12 @@ fi
 
 
 # get Vim and NeoVim
+add-apt-repository ppa:jonathonf/vim
 add-apt-repository ppa:neovim-ppa/unstable
 apt-get update -y
 apt-get upgrade -y
 apt-get install -y vim
+apt-get install vim-nox # required for python support on Vim 8.0+ (for YCM)
 apt-get install -y neovim
 
 
