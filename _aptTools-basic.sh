@@ -6,6 +6,10 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
+# add GNU Screen
+apt-get install screen
+
+
 # Jekyll (blog tool) install via Ruby (requires 2.0)
 gem2.0 install -y jekyll
 
