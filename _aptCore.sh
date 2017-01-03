@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-# get core tools with apt-get
+# get core tools and libraries
 apt-get install -y build-essential
 apt-get install -y software-properties-common
 apt-get install -y wget
@@ -19,6 +19,7 @@ apt-get install -y ruby2.0-dev
 apt-get install -y python-setuptools
 apt-get install -y python-software-properties
 apt-get install -y cmake
+apt-get install -y lsof
 apt-get install -y m4
 apt-get install -y apt-transport-https
 apt-get install -y ca-certificates
@@ -47,6 +48,10 @@ apt-get install -y libcairo-dev
 
 # add bash completions
 apt-get install -y bash-completion
+
+
+# add GNU Screen
+apt-get install screen
 
 
 # add The Silver Searcher

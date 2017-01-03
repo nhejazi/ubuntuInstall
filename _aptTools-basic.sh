@@ -6,10 +6,6 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-# add GNU Screen
-apt-get install screen
-
-
 # Jekyll (blog tool) install via Ruby (requires 2.0)
 gem2.0 install -y jekyll
 
@@ -27,13 +23,13 @@ apt-get update -y
 apt-get install -y atom
 
 
-# Hyper (terminal emulator) install
-echo "Installing Hyper (terminal) v.1.0.0 \n PLEASE CHECK that this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/1.0.0/hyper-1.0.0.deb
-dpkg -i hyper-1.0.0.deb
+# Hyper (terminal) install
+echo "Installing Hyper v.1.0.1 \n PLEASE CHECK that this is the most recent stable release."
+wget http://github.com/zeit/hyper/releases/download/1.0.1/hyper-1.0.1.deb
+dpkg -i hyper-1.0.1.deb
 
 
-# asciinema (terminal recording tool) install
+# asciinema (terminal recorder) install
 apt-add-repository ppa:zanchey/asciinema
 apt-get update -y
 apt-get install -y asciinema
