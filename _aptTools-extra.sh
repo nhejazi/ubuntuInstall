@@ -10,8 +10,8 @@ fi
 apt-get install -y zsh
 
 
-# set up oh-my-zsh dotfile collection...but not automatically
-#sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# get z-plug manager for zsh
+curl -sL zplug.sh/installer | zsh
 
 
 # pandoc (markup conversion tool) install
