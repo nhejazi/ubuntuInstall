@@ -6,14 +6,6 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-# zsh + zsh completions
-apt-get install -y zsh
-
-
-# get z-plug manager for zsh
-curl -sL zplug.sh/installer | zsh
-
-
 # pandoc (markup conversion tool) install
 echo "Installing Pandoc v.1.17.2-1 \n PLEASE CHECK that this is the most recent stable release."
 wget http://github.com/jgm/pandoc/releases/download/1.17.2/pandoc-1.17.2-1-amd64.deb

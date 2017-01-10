@@ -51,7 +51,13 @@ apt-get install -y bash-completion
 
 
 # add GNU Screen
-apt-get install screen
+apt-get install -y screen
+
+
+# add Tmux 2.0
+add-apt-repository -y ppa:pi-rho/dev
+apt-get update
+apt-get install -y tmux=2.0-1~ppa1~t
 
 
 # add The Silver Searcher
@@ -62,3 +68,11 @@ apt-get install -y silversearcher-ag
 git clone https://github.com/nhejazi/mydotfiles.git ~/.dotfiles
 sh ~/.dotfiles/_linkDots.sh
 echo "Dotfiles set up under root; root privileges will be needed to edit them."
+
+
+# zsh + zsh completions
+apt-get install -y zsh
+
+
+# get z-plug manager for zsh
+curl -sL zplug.sh/installer | zsh
