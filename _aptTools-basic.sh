@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-# Jekyll (blog tool) install via Ruby (requires 2.0)
+# Jekyll install via Ruby (requires 2.0)
 gem2.0 install -y jekyll
 
 
@@ -24,9 +24,9 @@ apt-get install -y atom
 
 
 # Hyper (terminal) install
-echo "Installing Hyper v.1.0.1 \n PLEASE CHECK that this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/1.0.1/hyper-1.0.1.deb
-dpkg -i hyper-1.0.1.deb
+echo "Installing Hyper v1.1.0 \n CHECK this is the most recent stable release."
+wget http://github.com/zeit/hyper/releases/download/1.1.0/hyper-1.1.0.deb
+dpkg -i hyper-1.1.0.deb
 
 
 # asciinema (terminal recorder) install
@@ -35,10 +35,8 @@ apt-get update -y
 apt-get install -y asciinema
 
 
-# add some global tools from Node.js
-npm install -g diff-so-fancy  #much prettier git diffs
-npm install -g how2  #use StackOverflow from command line
-npm install -g hpm-cli  #package/plug-in manager for Hyperterm
+# add some global tools from NodeJS
+npm install -g hpm-cli  # package/plug-in manager for Hyper (terminal)
 
 
 # fix installation issues arising from dependencies
