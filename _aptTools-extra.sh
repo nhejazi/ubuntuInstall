@@ -6,6 +6,12 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
+# Atom (editor) install
+add-apt-repository ppa:webupd8team/atom
+apt-get update -y
+apt-get install -y atom
+
+
 # pandoc (markup conversion tool) install
 echo "Installing Pandoc v.1.17.2-1 \n PLEASE CHECK that this is the most recent stable release."
 wget http://github.com/jgm/pandoc/releases/download/1.17.2/pandoc-1.17.2-1-amd64.deb

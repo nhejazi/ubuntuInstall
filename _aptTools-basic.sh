@@ -17,12 +17,6 @@ apt-get update -y
 apt-get install -y nodejs
 
 
-# Atom (editor) install
-add-apt-repository ppa:webupd8team/atom
-apt-get update -y
-apt-get install -y atom
-
-
 # Hyper (terminal) install
 echo "Installing Hyper v1.1.0 \n CHECK this is the most recent stable release."
 wget http://github.com/zeit/hyper/releases/download/1.1.0/hyper-1.1.0.deb
