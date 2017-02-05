@@ -1,6 +1,4 @@
-# Fresh Linux Ubuntu
-
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+# Fresh Linux Ubuntu [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 > Customization of fresh Ubuntu installs (including for Chromebook with
 [Crouton](https://github.com/dnschneid/crouton))
@@ -110,7 +108,7 @@ sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove
 
 ## License
 
-&copy; 2016 [Nima Hejazi](http://nimahejazi.org)
+&copy; 2016-2017 [Nima Hejazi](http://nimahejazi.org)
 
 The contents of this repository are distributed under the MIT license. See file
 `LICENSE` for details.
