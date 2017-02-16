@@ -24,9 +24,9 @@ apt-get install -y atom
 
 
 # Hyper (terminal) install
-echo "Installing Hyper v1.1.0 \n CHECK this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/1.1.0/hyper-1.1.0.deb
-dpkg -i hyper-1.1.0.deb
+echo "Installing Hyper v1.2.1 \n CHECK this is the most recent stable release."
+wget http://github.com/zeit/hyper/releases/download/1.2.1/hyper_1.2.1.deb
+dpkg -i hyper_1.2.1.deb
 
 
 # asciinema (terminal recorder) install
