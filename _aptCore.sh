@@ -6,6 +6,10 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
+# update system before install
+apt-get update
+
+
 # get core tools and libraries
 apt-get install -y build-essential
 apt-get install -y software-properties-common
@@ -58,6 +62,10 @@ apt-get install -y screen
 add-apt-repository -y ppa:pi-rho/dev
 apt-get update
 apt-get install -y tmux=2.0-1~ppa1~t
+
+
+# utility for building/checking PDFs
+apt-get install -y qpdf
 
 
 # add The Silver Searcher
