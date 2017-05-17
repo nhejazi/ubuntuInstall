@@ -6,10 +6,6 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-# Jekyll install via Ruby (requires 2.0)
-gem2.0 install -y jekyll
-
-
 # NodeJS install
 apt-key adv --keyserver keyserver.ubuntu.com --recv 68576280
 apt-add-repository "deb https://deb.nodesource.com/node_5.x $(lsb_release -sc) main"
@@ -37,6 +33,14 @@ apt-get install -y asciinema
 
 # add some global tools from NodeJS
 npm install -g hpm-cli  # package/plug-in manager for Hyper (terminal)
+
+
+# Hugo for modern static websites
+apt-get install hugo
+
+
+# Jekyll install via Ruby (requires 2.0)
+gem2.0 install -y jekyll
 
 
 # fix installation issues arising from dependencies
