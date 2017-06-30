@@ -20,9 +20,15 @@ apt-get install -y atom
 
 
 # Hyper (terminal) install
-echo "Installing Hyper v1.3.2 \n CHECK this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/1.3.2/hyper_1.3.2.deb
-dpkg -i hyper_1.3.2.deb
+echo "Installing Hyper v1.3.3 \n CHECK this is the most recent stable release."
+wget http://github.com/zeit/hyper/releases/download/1.3.3/hyper_1.3.3.deb
+dpkg -i hyper_1.3.3.deb
+
+
+# Hugo (modern static site generator)
+echo "Installing Hugo v0.24.1 \n CHECK this is the most recent stable release."
+wget https://github.com/gohugoio/hugo/releases/download/v0.24.1/hugo_0.24.1_Linux-64bit.deb
+dpkg -i hugo_0.24.1_Linux-64bit.deb 
 
 
 # asciinema (terminal recorder) install
@@ -33,14 +39,7 @@ apt-get install -y asciinema
 
 # add some global tools from NodeJS
 npm install -g hpm-cli  # package/plug-in manager for Hyper (terminal)
-
-
-# Hugo for modern static websites
-apt-get install hugo
-
-
-# Jekyll install via Ruby (requires 2.0)
-gem2.0 install -y jekyll
+npm install -g now  # modern and simple web management tool by ZEIT
 
 
 # fix installation issues arising from dependencies
