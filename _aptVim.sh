@@ -23,8 +23,8 @@ fi
 
 
 # get and setup config files for using Vim
-git clone https://github.com/nhejazi/myvimconfig.git ~/.vim
-sh ~/.vim/_setup.sh
+git clone https://github.com/nhejazi/vimForLife.git ~/.vim
+sh ~/.vim/_setupVim.sh
 
 
 # preserve any existing Neovim configuration files
@@ -34,5 +34,5 @@ fi
 
 
 # get and setup config files for using Neovim
-git clone https://github.com/nhejazi/myneovimconfig.git ~/.config/nvim
-sh ~/.config/nvim/_setup.sh
+git clone https://github.com/nhejazi/vimForLife.git ~/.config/nvim
+sh ~/.config/nvim/_setupNeovim.sh
