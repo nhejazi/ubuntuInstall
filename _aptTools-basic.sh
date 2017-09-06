@@ -20,15 +20,15 @@ apt-get install -y atom
 
 
 # Hyper (terminal) install
-echo "Installing Hyper v1.3.3 \n CHECK this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/1.3.3/hyper_1.3.3.deb
-dpkg -i hyper_1.3.3.deb
+echo "Installing Hyper v1.4.3 \n CHECK this is the most recent stable release."
+wget http://github.com/zeit/hyper/releases/download/1.4.3/hyper_1.4.3_amd64.deb
+dpkg -i hyper_1.4.3_amd64.deb
 
 
 # Hugo (modern static site generator)
 echo "Installing Hugo v0.24.1 \n CHECK this is the most recent stable release."
 wget https://github.com/gohugoio/hugo/releases/download/v0.24.1/hugo_0.24.1_Linux-64bit.deb
-dpkg -i hugo_0.24.1_Linux-64bit.deb 
+dpkg -i hugo_0.24.1_Linux-64bit.deb
 
 
 # asciinema (terminal recorder) install
