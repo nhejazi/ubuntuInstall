@@ -83,5 +83,5 @@ apt-get install -y zsh
 
 
 # get z-plug manager for zsh
-curl -sL zplug.sh/installer | zsh
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
 
