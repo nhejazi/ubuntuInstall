@@ -26,3 +26,4 @@ apt-get install -y --no-install-recommends indicator-sound
 
 # remove XScreensaver, since it causes problems on Chromebook
 apt-get purge xscreensaver
+

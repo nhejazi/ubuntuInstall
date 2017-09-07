@@ -43,8 +43,6 @@ installation_, for simplicity invoke the Make recipe from the provided
 5. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh`
 6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-basic.sh`
 7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
-8. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptXfce.sh`
-9. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
 
 **_N.B.,_** the script `_aptXfce.sh` does not add any critical software, only
 minor interface edits, thus skipping this step should have no undesirable
@@ -71,7 +69,6 @@ installation_, for simplicity invoke the Make recipe from the provided
 8. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-extra.sh`
 9. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptDocker.sh`
 10. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
-11. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
 
 
 ### Amazon's EC2 Ubuntu Instances:
@@ -88,7 +85,6 @@ installation_, for simplicity invoke the Make recipe from the provided
 5. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh`
 6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-extra.sh`
 7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
-8. `rm -rf *.deb $(readlink -f ~/ubuntu-fresh)`
 
 
 ### Updates with `apt-get`
@@ -112,3 +108,4 @@ sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove
 
 The contents of this repository are distributed under the MIT license. See file
 `LICENSE` for details.
+

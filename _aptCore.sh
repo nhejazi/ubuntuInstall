@@ -84,3 +84,4 @@ apt-get install -y zsh
 
 # get z-plug manager for zsh
 curl -sL zplug.sh/installer | zsh
+
