@@ -39,16 +39,18 @@ installation_, for simplicity invoke the Make recipe from the provided
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
 3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
-4. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh`
-5. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh`
-6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-basic.sh`
-7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
+4. `sudo sh $(readlink -f ~/ubuntu-fresh)/core.sh`
+5. `sudo sh $(readlink -f ~/ubuntu-fresh)/langs-core.sh`
+6. `sudo sh $(readlink -f ~/ubuntu-fresh)/tools-core.sh`
+7. `sudo sh $(readlink -f ~/ubuntu-fresh)/vim.sh`
 
-**_N.B.,_** the script `_aptXfce.sh` does not add any critical software, only
-minor interface edits, thus skipping this step should have no undesirable
-consequences. It is only appropriate for use with Xubuntu and the Xfce desktop
-environment.
+**_N.B.,_** Following this minimal setup procedure, consider running either
+`xfce.sh` or `lxde.sh`. The former will modify the XFCE desktop environment to
+make it leaner for use on Chromebooks while the latter provides the LXDE desktop
+environment, which benchmarks reveal to be the least resource-intensive desktop
+environment available on Ubuntu-derived systems.
 
+---
 
 ### Heavyweight Local Setup (e.g., MacBook Pro w/ rEFIt):
 I prefer this setup when configuring Ubuntu on machines with fairly
@@ -62,13 +64,13 @@ installation_, for simplicity invoke the Make recipe from the provided
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
 3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
-4. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh`
-5. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh`
-6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-extra.sh`
-7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-basic.sh`
-8. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-extra.sh`
-9. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptDocker.sh`
-10. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
+4. `sudo sh $(readlink -f ~/ubuntu-fresh)/core.sh`
+5. `sudo sh $(readlink -f ~/ubuntu-fresh)/langs-core.sh`
+6. `sudo sh $(readlink -f ~/ubuntu-fresh)/langs-extra.sh`
+7. `sudo sh $(readlink -f ~/ubuntu-fresh)/tools-core.sh`
+8. `sudo sh $(readlink -f ~/ubuntu-fresh)/tools-extra.sh`
+9. `sudo sh $(readlink -f ~/ubuntu-fresh)/docker.sh`
+10. `sudo sh $(readlink -f ~/ubuntu-fresh)/vim.sh`
 
 
 ### Amazon's EC2 Ubuntu Instances:
@@ -81,10 +83,10 @@ installation_, for simplicity invoke the Make recipe from the provided
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git ruby`
 3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
-4. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptCore.sh`
-5. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptLangs-basic.sh`
-6. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptTools-extra.sh`
-7. `sudo sh $(readlink -f ~/ubuntu-fresh)/_aptVim.sh`
+4. `sudo sh $(readlink -f ~/ubuntu-fresh)/core.sh`
+5. `sudo sh $(readlink -f ~/ubuntu-fresh)/langs-core.sh`
+6. `sudo sh $(readlink -f ~/ubuntu-fresh)/tools-extra.sh`
+7. `sudo sh $(readlink -f ~/ubuntu-fresh)/vim.sh`
 
 
 ### Updates with `apt-get`
