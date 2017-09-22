@@ -14,9 +14,9 @@ apt-get install -y nodejs
 
 
 # Hyper (terminal) install
-echo "Installing Hyper v1.4.4 \n CHECK this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/1.4.4/hyper_1.4.4_amd64.deb
-dpkg -i hyper_1.4.4_amd64.deb
+echo "Installing Hyper v2.0.2 \n CHECK this is the most recent stable release."
+wget http://github.com/zeit/hyper/releases/download/2.0.2/hyper_2.0.2_amd64.deb
+dpkg -i hyper_2.0.2_amd64.deb
 
 
 # Hugo (modern static site generator)
