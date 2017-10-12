@@ -58,6 +58,10 @@ apt-get install -y bash-completion
 apt-get install -y screen
 
 
+# add mosh (mobile shell client)
+apt-get install mosh
+
+
 # add Tmux 2.0
 add-apt-repository -y ppa:pi-rho/dev
 apt-get update
