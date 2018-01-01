@@ -17,10 +17,11 @@ apt-get install -y python-setuptools python-software-properties ruby ruby-dev \
   ruby2.0 ruby2.0-dev texinfo
 apt-get install -y libzmq3 libzmq3-dev libzmq5-dev libczmq-dev libncurses-dev \
   libncurses5-dev libcurl4-openssl-dev libcurl4-gnutls-dev
-apt-get install -y libblas-dev liblapack-dev libboost-all-dev libgdal-dev \
-  libssl-dev libsdl-dev libglib2.0-dev libtool libreadline-dev
-apt-get install -y libexpat-dev libbz2-dev libxml2-dev libgeos-dev zlib1g-dev \
-  libsqlite3-dev libgdbm-dev libxslt1-dev libcairo-dev
+apt-get install -y libbz2-dev libssl-dev libreadline-dev libpng-dev libtool \
+  libfreetype6-dev libsqlite3-dev libboost-all-dev libblas-dev liblapack-dev
+apt-get install -y libexpat-dev libsdl-dev libxml2-dev libgeos-dev zlib1g-dev \
+  libgdbm-dev libxslt1-dev libcairo-dev libgdal-dev libglib2.0-dev
+
 
 # add bash completions
 apt-get install -y bash-completion
