@@ -11,26 +11,15 @@ echo "deb http://cran.fhcrc.org/bin/linux/ubuntu $(lsb_release -c -s)/" | sudo t
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9  
 add-apt-repository ppa:marutter/rdev
 apt-get update -y
-apt-get install -y r-base
-apt-get install -y r-base-dev
+apt-get install -y r-base r-base-dev
 
 
-# install Python and dependencies
-add-apt-repository ppa:fkrull/deadsnakes
+# install Python 3.6, dependencies, and pip
+## NOTE: this results in pip, pip3, and pip3.6 all targeting python 3.6
+add-apt-repository ppa:deadsnakes/ppa
 apt-get update -y
-apt-get install -y python2.7
-apt-get install -y python-dev
-apt-get install -y python-pip
-apt-get install -y python3.5
-apt-get install -y python3-dev
-apt-get install -y python3-pip
-
-
-# julia install
-add-apt-repository ppa:staticfloat/juliareleases
-add-apt-repository ppa:staticfloat/julia-deps
-apt-get update -y
-apt-get install -y julia
+apt-get install -y python3.6 python3.6-dev python3.6-venv
+curl https://bootstrap.pypa.io/get-pip.py | sudo python3.6
 
 
 # force install all of the above with dependencies

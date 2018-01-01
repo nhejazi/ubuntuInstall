@@ -14,15 +14,15 @@ apt-get install -y nodejs
 
 
 # Hyper (terminal) install
-echo "Installing Hyper v2.0.2 \n CHECK this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/2.0.2/hyper_2.0.2_amd64.deb
-dpkg -i hyper_2.0.2_amd64.deb
+echo "Installing Hyper v2.0.0-canary.8 \nCHECK this is the most recent stable release."
+wget http://github.com/zeit/hyper/releases/download/2.0.0-canary.8/hyper_2.0.0-canary.8_amd64.deb
+dpkg -i hyper_2.0.0-canary.8_amd64.deb
 
 
 # Hugo (modern static site generator)
-echo "Installing Hugo v0.24.1 \n CHECK this is the most recent stable release."
-wget https://github.com/gohugoio/hugo/releases/download/v0.24.1/hugo_0.24.1_Linux-64bit.deb
-dpkg -i hugo_0.24.1_Linux-64bit.deb
+echo "Installing Hugo v0.32 \nCHECK this is the most recent stable release."
+wget https://github.com/gohugoio/hugo/releases/download/v0.32/hugo_0.32_Linux-64bit.deb
+dpkg -i hugo_0.32_Linux-64bit.deb
 
 
 # asciinema (terminal recorder) install

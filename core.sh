@@ -10,61 +10,25 @@ fi
 apt-get update
 
 
-# get core tools and libraries
-apt-get install -y build-essential
-apt-get install -y software-properties-common
-apt-get install -y wget
-apt-get install -y curl
-apt-get install -y git
-apt-get install -y ruby
-apt-get install -y ruby-dev
-apt-get install -y ruby2.0
-apt-get install -y ruby2.0-dev
-apt-get install -y python-setuptools
-apt-get install -y python-software-properties
-apt-get install -y cmake
-apt-get install -y lsof
-apt-get install -y m4
-apt-get install -y apt-transport-https
-apt-get install -y ca-certificates
-apt-get install -y libzmq3
-apt-get install -y libzmq3-dev
-apt-get install -y libcurl4-openssl-dev
-apt-get install -y libexpat-dev
-apt-get install -y libncurses-dev
-apt-get install -y libbz2-dev
-apt-get install -y libcurl4-gnutls-dev
-apt-get install -y libxml2-dev
-apt-get install -y libssl-dev
-apt-get install -y libboost-all-dev
-apt-get install -y libzmq5-dev
-apt-get install -y libczmq-dev
-apt-get install -y libgeos-dev
-apt-get install -y libgdal-dev
-apt-get install -y zlib1g-dev
-apt-get install -y libsqlite3-dev
-apt-get install -y libreadline-dev
-apt-get install -y libncurses5-dev
-apt-get install -y libgdbm-dev
-apt-get install -y libxslt1-dev
-apt-get install -y libcairo-dev
-
+# get core tools, languages, and libraries
+apt-get install -y build-essential software-properties-common wget curl git \
+  cmake lsof m4 apt-transport-https ca-certificates autoconf
+apt-get install -y python-setuptools python-software-properties ruby ruby-dev \
+  ruby2.0 ruby2.0-dev texinfo
+apt-get install -y libzmq3 libzmq3-dev libzmq5-dev libczmq-dev libncurses-dev \
+  libncurses5-dev libcurl4-openssl-dev libcurl4-gnutls-dev
+apt-get install -y libblas-dev liblapack-dev libboost-all-dev libgdal-dev \
+  libssl-dev libsdl-dev libglib2.0-dev libtool libreadline-dev
+apt-get install -y libexpat-dev libbz2-dev libxml2-dev libgeos-dev zlib1g-dev \
+  libsqlite3-dev libgdbm-dev libxslt1-dev libcairo-dev
 
 # add bash completions
 apt-get install -y bash-completion
 
 
-# add GNU Screen
-apt-get install -y screen
-
-
-# add mosh (mobile shell client)
-apt-get install mosh
-
-
-# add Tmux 2.0
+# add GNU Screen, mosh (mobile shell client), and Tmux v2.0
 add-apt-repository -y ppa:pi-rho/dev
-apt-get update
+apt-get install -y screen mosh
 apt-get install -y tmux=2.0-1~ppa1~t
 
 
@@ -82,10 +46,8 @@ sh ~/.dotfiles/_linkDots.sh
 echo "Dotfiles set up under root; root privileges will be needed to edit them."
 
 
-# zsh + zsh completions
+# zsh, zsh completions, and z-plug manager
 apt-get install -y zsh
-
-
-# get z-plug manager for zsh
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
+curl -sL --proto-redir -all,https \
+  https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
