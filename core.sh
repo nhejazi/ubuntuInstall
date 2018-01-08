@@ -14,12 +14,12 @@ apt-get update
 apt-get install -y build-essential software-properties-common wget curl git \
   cmake lsof m4 apt-transport-https ca-certificates autoconf
 apt-get install -y python-setuptools python-software-properties ruby ruby-dev \
-  ruby2.0 ruby2.0-dev texinfo
+  ruby2.0 ruby2.0-dev texinfo xclip
 apt-get install -y libzmq3 libzmq3-dev libzmq5-dev libczmq-dev libncurses-dev \
   libncurses5-dev libcurl4-openssl-dev libcurl4-gnutls-dev
 apt-get install -y libbz2-dev libssl-dev libpng-dev liblzma-dev libpcre2-dev \
   libfreetype6-dev libsqlite3-dev libblas-dev liblapack-dev libreadline-dev \
-  libboost-all-dev
+  libboost-all-dev libfontconfig1-dev
 apt-get install -y libexpat-dev libsdl-dev libxml2-dev libgeos-dev zlib1g-dev \
   libgdbm-dev libxslt1-dev libcairo-dev libgdal-dev libglib2.0-dev libtool
 
@@ -30,8 +30,7 @@ apt-get install -y bash-completion
 
 # add GNU Screen, mosh (mobile shell client), and Tmux v2.0
 add-apt-repository -y ppa:pi-rho/dev
-apt-get install -y screen mosh
-apt-get install -y tmux=2.0-1~ppa1~t
+apt-get install -y screen tmux=2.0-1~ppa1~t mosh
 
 
 # utility for building/checking PDFs

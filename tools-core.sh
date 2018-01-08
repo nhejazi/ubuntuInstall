@@ -13,12 +13,6 @@ apt-get update -y
 apt-get install -y nodejs
 
 
-# Hyper (terminal) install
-echo "Installing Hyper v2.0.0-canary.8 \nCHECK this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/2.0.0-canary.8/hyper_2.0.0-canary.8_amd64.deb
-dpkg -i hyper_2.0.0-canary.8_amd64.deb
-
-
 # Hugo (modern static site generator)
 echo "Installing Hugo v0.32 \nCHECK this is the most recent stable release."
 wget https://github.com/gohugoio/hugo/releases/download/v0.32/hugo_0.32_Linux-64bit.deb
