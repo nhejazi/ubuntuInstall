@@ -25,9 +25,9 @@ dpkg -i rstudio-1.0.44-amd64.deb
 
 
 # Hyper (terminal) install
-echo "Installing Hyper v2.0.0-canary.8 \nCHECK this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/2.0.0-canary.8/hyper_2.0.0-canary.8_amd64.deb
-dpkg -i hyper_2.0.0-canary.8_amd64.deb
+#echo "Installing Hyper v2.0.0-canary.8 \nCHECK this is the most recent stable release."
+#wget http://github.com/zeit/hyper/releases/download/2.0.0-canary.8/hyper_2.0.0-canary.8_amd64.deb
+#dpkg -i hyper_2.0.0-canary.8_amd64.deb
 
 
 # fix installation issues arising from dependencies
