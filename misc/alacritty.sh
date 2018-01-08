@@ -1,6 +1,6 @@
-# Alacritty is simple, GPU-accelerated terminal built in Rust
-# https://github.com/jwilm/alacritty
-# Note: It must be built from source
+# Alacritty is a simple, GPU-accelerated terminal emulator built in Rust
+# see https://github.com/jwilm/alacritty for more
+# Note: Alacritty must be built from source (as of 07 Jan. 2018)
 
 # 1) Clone the source code:
 git clone https://github.com/jwilm/alacritty.git ~/alacritty
