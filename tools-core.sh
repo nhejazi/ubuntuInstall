@@ -6,6 +6,14 @@ if [[ "$EUID" -ne 0 ]]; then
 fi
 
 
+# Qtile window manager
+apt-get install -y qtile
+
+
+# GPG2 for signing commits
+apt-get install gnupg2
+
+
 # NodeJS install
 apt-key adv --keyserver keyserver.ubuntu.com --recv 68576280
 apt-add-repository "deb https://deb.nodesource.com/node_5.x $(lsb_release -sc) main"
