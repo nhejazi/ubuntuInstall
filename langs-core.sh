@@ -1,25 +1,24 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]; then
+if [[ "$EUID" -ne 0 ]]; then
   echo "This script must be run as root"
   exit
 fi
 
 
 # install R and R-dev
-echo "deb http://cran.fhcrc.org/bin/linux/ubuntu $(lsb_release -c -s)/" | sudo tee -a /etc/apt/sources.list > /dev/null  
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9  
-add-apt-repository ppa:marutter/rdev
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/"
 apt-get update -y
 apt-get install -y r-base r-base-dev
 
 
-# install Python 3.6, dependencies, and pip
-## NOTE: this results in pip, pip3, and pip3.6 all targeting python 3.6
+# install Python 3.7, dependencies, and pip
+## NOTE: this results in pip, pip3, and pip3.7 all targeting python 3.7
 add-apt-repository ppa:deadsnakes/ppa
 apt-get update -y
-apt-get install -y python3.6 python3.6-dev python3.6-venv
-curl https://bootstrap.pypa.io/get-pip.py | sudo python3.6
+apt-get install -y python3.7 python3.7-dev python3.7-venv
+curl https://bootstrap.pypa.io/get-pip.py | sudo python3.7
 
 
 # install rust

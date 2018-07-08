@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]; then
+if [[ "$EUID" -ne 0 ]]; then
   echo "This script must be run as root"
   exit
 fi
@@ -13,14 +13,14 @@ apt-get install -y oracle-java8-installer
 
 
 # julia install
-add-apt-repository ppa:staticfloat/juliareleases
-add-apt-repository ppa:staticfloat/julia-deps
-apt-get update -y
-apt-get install -y julia
+#add-apt-repository ppa:staticfloat/juliareleases
+#add-apt-repository ppa:staticfloat/julia-deps
+#apt-get update -y
+#apt-get install -y julia
 
 
 # latex install
-#apt-get install -y texlive
+apt-get install -y texlive
 
 
 # sbt install

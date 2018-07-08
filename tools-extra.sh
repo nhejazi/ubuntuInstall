@@ -1,15 +1,15 @@
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]; then
+if [[ "$EUID" -ne 0 ]]; then
   echo "This script must be run as root"
   exit
 fi
 
 
 # pandoc (markup conversion tool) install
-echo "Installing Pandoc v.1.17.2-1 \n PLEASE CHECK that this is the most recent stable release."
-wget http://github.com/jgm/pandoc/releases/download/1.17.2/pandoc-1.17.2-1-amd64.deb
-dpkg -i pandoc-1.17.2-1-amd64.deb
+echo "Installing Pandoc v.2.2.1-1 \n PLEASE CHECK that this is the most recent stable release."
+wget http://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-1-amd64.deb
+dpkg -i pandoc-2.2.1-1-amd64.deb
 
 
 # Atom (editor) install
@@ -25,9 +25,9 @@ dpkg -i rstudio-1.0.44-amd64.deb
 
 
 # Hyper (terminal) install
-#echo "Installing Hyper v2.0.0-canary.8 \nCHECK this is the most recent stable release."
-#wget http://github.com/zeit/hyper/releases/download/2.0.0-canary.8/hyper_2.0.0-canary.8_amd64.deb
-#dpkg -i hyper_2.0.0-canary.8_amd64.deb
+echo "Installing Hyper v2.1.0-canary.2 \nCHECK this is the most recent stable release."
+wget http://github.com/zeit/hyper/releases/download/2.1.0-canary.2/hyper_2.1.0-canary.2_amd64.deb
+dpkg -i hyper_2.1.0-canary.2_amd64.deb
 
 
 # fix installation issues arising from dependencies
