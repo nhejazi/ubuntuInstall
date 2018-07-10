@@ -20,7 +20,7 @@ apt-get install -y oracle-java8-installer
 
 
 # latex install
-apt-get install -y texlive
+apt-get install -y texlive-full
 
 
 # sbt install

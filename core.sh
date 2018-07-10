@@ -33,6 +33,10 @@ add-apt-repository -y ppa:pi-rho/dev
 apt-get install -y screen tmux=2.0-1~ppa1~t mosh
 
 
+# i3 tiling window manager
+apt-get install -y i3
+
+
 # utility for building/checking PDFs
 apt-get install -y qpdf
 

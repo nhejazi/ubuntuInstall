@@ -14,14 +14,6 @@ apt-get install -y qtile
 apt-get install gnupg2
 
 
-# NodeJS install
-apt-key adv --keyserver keyserver.ubuntu.com --recv 68576280
-apt-add-repository "deb https://deb.nodesource.com/node_5.x $(lsb_release -sc) main"
-apt-get update -y
-apt-get install -y nodejs
-apt-get install -y npm
-
-
 # Hugo (modern static site generator)
 echo "Installing Hugo v0.32 \nCHECK this is the most recent stable release."
 wget https://github.com/gohugoio/hugo/releases/download/v0.42.2/hugo_0.42.2_Linux-64bit.deb
