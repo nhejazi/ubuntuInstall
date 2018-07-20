@@ -7,7 +7,8 @@ fi
 
 
 # update system before install
-apt-get update
+apt-get update -y
+apt-get upgrade -y
 
 
 # get core tools, languages, and libraries
@@ -37,6 +38,14 @@ apt-get install -y screen tmux=2.0-1~ppa1~t mosh
 apt-get install -y i3
 
 
+# seahorse password manager
+apt-get install -y seahorse
+
+
+# GPG2 for signing commits
+apt-get install gnupg2
+
+
 # utility for building/checking PDFs
 apt-get install -y qpdf
 
@@ -45,10 +54,11 @@ apt-get install -y qpdf
 apt-get install -y silversearcher-ag
 
 
-# setup my dotfiles
-git clone https://github.com/nhejazi/mydots.git ~/.dotfiles
-sh ~/.dotfiles/_linkDots.sh
-echo "Dotfiles set up under root; root privileges will be needed to edit them."
+# get Vim and NeoVim
+# NOTE: vim-nox is required for python support on Vim 8.0+ (for YCM)
+add-apt-repository ppa:jonathonf/vim
+add-apt-repository ppa:neovim-ppa/unstable
+apt-get install -y vim vim-nox neovim
 
 
 # zsh, zsh completions, and z-plug manager

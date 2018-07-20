@@ -21,10 +21,6 @@ apt-get install -y python3.7 python3.7-dev python3.7-venv
 curl https://bootstrap.pypa.io/get-pip.py | sudo python3.7
 
 
-# install rust
-curl https://sh.rustup.rs -sSf | sh
-
-
 # force install all of the above with dependencies
 apt-get install -f -y
 echo "If any dependency warnings appeared, run this script a second time."

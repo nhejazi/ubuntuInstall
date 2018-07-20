@@ -1,18 +1,8 @@
 #!/bin/bash
 
-if [[ "$EUID" -ne 0 ]]; then
-  echo "This script must be run as root"
-  exit
-fi
-
-
-# get Vim and NeoVim
-# NOTE: vim-nox is required for python support on Vim 8.0+ (for YCM)
-add-apt-repository ppa:jonathonf/vim
-add-apt-repository ppa:neovim-ppa/unstable
-apt-get update -y
-apt-get upgrade -y
-apt-get install -y vim vim-nox neovim
+# setup my dotfiles
+git clone https://github.com/nhejazi/mydots.git ~/.dotfiles
+sh ~/.dotfiles/_linkDots.sh
 
 
 # preserve any existing Vim configuration files

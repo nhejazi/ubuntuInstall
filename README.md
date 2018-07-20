@@ -1,48 +1,47 @@
-# Fresh Linux Ubuntu [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+# Fresh Linux Box [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-> Customization of fresh Ubuntu installs (including for Chromebook with
-[Crouton](https://github.com/dnschneid/crouton))
+> Customization of fresh Linux installs, using Debian/Ubuntu and derivatives
 
 ---
 
-## Summary
+## What is this?
 
-My set of customization scripts for setting Linux Ubuntu to my preferences. This
-is a collection of scripts that set up three different configurations of Ubuntu
-machines, written specifically for machines with varying resource constraints.
+My set of customization scripts for setting a fresh Linux box to my preferences.
+This is a collection of scripts that flexibly allowing setting up a few
+different machine configurations, written specifically to handle a variety of
+resource constraints.
 
 This workflow has been tested on [Amazon's EC2 Ubuntu
 instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS), my [Acer
 Chromebook 11 C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002)
-(running [Ubuntu 14.04 Trusty Tahr](http://releases.ubuntu.com/14.04/) and
-the [Xfce desktop environment](http://www.xfce.org/), installed via
-[Crouton](https://github.com/dnschneid/crouton)), as well as a dual-boot
-[MacBook Pro 2010 (7,1)](https://support.apple.com/kb/sp583?locale=en_US)
-(running [Ubuntu 14.04 Trusty Tahr](http://releases.ubuntu.com/14.04/) and the
-[Unity desktop environment](https://unity.ubuntu.com/),
-installed via [rEFIt](http://refit.sourceforge.net/)).
+(running [Ubuntu 14.04 Trusty Tahr](http://releases.ubuntu.com/14.04/) with the
+[Xfce desktop](http://www.xfce.org/), installed via
+[Crouton](https://github.com/dnschneid/crouton)), a dual-booting [MacBook Pro
+2010 (7,1)](https://support.apple.com/kb/sp583?locale=en_US) (running [Ubuntu
+14.04 Trusty Tahr](http://releases.ubuntu.com/14.04/) with the [Unity
+desktop](https://unity.ubuntu.com/), installed via
+[rEFIt](http://refit.sourceforge.net/)), and a [ThinkPad X1 Carbon 2018,
+(6th-generation)](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Carbon-6th-Gen/p/20KH002HUS) (running [Ubuntu 18.04 Bionic
+Beaver](http://releases.ubuntu.com/18.04/) with the minimal [i3 window
+manager](https://i3wm.org))
 
 ---
 
-## Directions
+## How do I use this?
 
-### Lightweight Local Setup (e.g., Chromebook w/ Crouton):
-I prefer this setup when configuring Ubuntu on machines with limited resources
-(e.g., on Chromebook with [Crouton](https://github.com/dnschneid/crouton)).
+### Lite Local Setup (e.g., Chromebook w/ Crouton):
+A configuration for machines with limited resources (e.g., on Chromebook with
+[Crouton](https://github.com/dnschneid/crouton)).
 __For directions on installing Ubuntu on your Chromebook using _Crouton_, see
 file `Crouton.md` in this repository.__
 
-_The step-by-step procedure is given below in case any problems arise during the
-installation_, for simplicity invoke the Make recipe from the provided
-`Makefile` via `make light`.
-
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
-3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
-4. `sudo sh $(readlink -f ~/ubuntu-fresh)/core.sh`
-5. `sudo sh $(readlink -f ~/ubuntu-fresh)/langs-core.sh`
-6. `sudo sh $(readlink -f ~/ubuntu-fresh)/tools-core.sh`
-7. `sudo sh $(readlink -f ~/ubuntu-fresh)/vim.sh`
+3. `git clone https://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
+4. `sudo sh ~/ubuntu-fresh/core.sh`
+5. `sudo sh ~/ubuntu-fresh/langs-core.sh`
+6. `sudo sh ~/ubuntu-fresh/tools.sh`
+7. `sh ~/ubuntu-fresh/nosudo.sh`
 
 **_N.B.,_** Following this minimal setup procedure, consider running either
 `xfce.sh` or `lxde.sh`. The former will modify the XFCE desktop environment to
@@ -52,48 +51,19 @@ environment available on Ubuntu-derived systems.
 
 ---
 
-### Heavyweight Local Setup (e.g., MacBook Pro w/ rEFIt):
+### Standard Local Setup (e.g., MacBook Pro w/ rEFIt):
 I prefer this setup when configuring Ubuntu on machines with fairly
 unconstrained resources (e.g., on a dual-booting MacBook Pro configured with
 [rEFIt](http://refit.sourceforge.net/)).
 
-_The step-by-step procedure is given below in case any problems arise during the
-installation_, for simplicity invoke the Make recipe from the provided
-`Makefile` via `make heavy`.
-
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
 3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
-4. `sudo sh $(readlink -f ~/ubuntu-fresh)/core.sh`
-5. `sudo sh $(readlink -f ~/ubuntu-fresh)/langs-core.sh`
-6. `sudo sh $(readlink -f ~/ubuntu-fresh)/langs-extra.sh`
-7. `sudo sh $(readlink -f ~/ubuntu-fresh)/tools-core.sh`
-8. `sudo sh $(readlink -f ~/ubuntu-fresh)/tools-extra.sh`
-9. `sudo sh $(readlink -f ~/ubuntu-fresh)/docker.sh`
-10. `sudo sh $(readlink -f ~/ubuntu-fresh)/vim.sh`
-
-
-### Amazon's EC2 Ubuntu Instances:
-I prefer this setup when configuring fresh EC2 Ubuntu instances.
-
-_The step-by-step procedure is given below in case any problems arise during the
-installation_, for simplicity invoke the Make recipe from the provided
-`Makefile` via `make ec2`.
-
-1. `sudo apt-get update && sudo apt-get upgrade`
-2. `sudo apt-get install build-essential git ruby`
-3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
-4. `sudo sh $(readlink -f ~/ubuntu-fresh)/core.sh`
-5. `sudo sh $(readlink -f ~/ubuntu-fresh)/langs-core.sh`
-6. `sudo sh $(readlink -f ~/ubuntu-fresh)/tools-extra.sh`
-7. `sudo sh $(readlink -f ~/ubuntu-fresh)/vim.sh`
-
-
-### Updates with `apt-get`
-```bash
-sudo apt-get update && sudo apt-get upgrade
-sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove
-```
+4. `sudo sh ~/ubuntu-fresh/core.sh`
+5. `sudo sh ~/ubuntu-fresh/langs-core.sh`
+6. `sudo sh ~/ubuntu-fresh/langs-extra.sh`
+6. `sudo sh ~/ubuntu-fresh/tools.sh`
+7. `sh ~/ubuntu-fresh/nosudo.sh`
 
 ---
 
@@ -106,7 +76,7 @@ sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove
 
 ## License
 
-&copy; 2016-2017 [Nima Hejazi](http://nimahejazi.org)
+&copy; 2016-2018 [Nima Hejazi](https://nimahejazi.org)
 
 The contents of this repository are distributed under the MIT license. See file
 `LICENSE` for details.

@@ -6,21 +6,18 @@ if [[ "$EUID" -ne 0 ]]; then
 fi
 
 
+# latex install
+apt-get install -y texlive-full
+
+
 # java install
 add-apt-repository ppa:webupd8team/java
 apt-get update -y
 apt-get install -y oracle-java8-installer
 
 
-# julia install
-#add-apt-repository ppa:staticfloat/juliareleases
-#add-apt-repository ppa:staticfloat/julia-deps
-#apt-get update -y
-#apt-get install -y julia
-
-
-# latex install
-apt-get install -y texlive-full
+# install rust
+curl https://sh.rustup.rs -sSf | sh
 
 
 # sbt install
