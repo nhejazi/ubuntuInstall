@@ -42,6 +42,10 @@ apt-get install -y i3
 apt-get install -y seahorse
 
 
+# keychain management utility (for ssh-agent)
+apt-get install -y keychain
+
+
 # GPG2 for signing commits
 apt-get install gnupg2
 
