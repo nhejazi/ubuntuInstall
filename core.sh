@@ -38,12 +38,8 @@ apt-get install -y screen tmux=2.0-1~ppa1~t mosh
 apt-get install -y i3
 
 
-# seahorse password manager
-apt-get install -y seahorse
-
-
-# keychain management utility (for ssh-agent)
-apt-get install -y keychain
+# ssh-askpass, seahorse, and keychain management utilities (for ssh-agent)
+apt-get install -y ssh-askpass seahorse keychain
 
 
 # GPG2 for signing commits
