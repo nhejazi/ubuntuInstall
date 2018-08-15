@@ -15,7 +15,7 @@ apt-get upgrade -y
 apt-get install -y build-essential software-properties-common wget curl git \
   cmake lsof m4 apt-transport-https ca-certificates autoconf
 apt-get install -y python-setuptools python-software-properties ruby ruby-dev \
-  ruby2.0 ruby2.0-dev texinfo xclip
+  texinfo xclip
 apt-get install -y libzmq3 libzmq3-dev libzmq5-dev libczmq-dev libncurses-dev \
   libncurses5-dev libcurl4-openssl-dev libcurl4-gnutls-dev
 apt-get install -y libbz2-dev libssl-dev libpng-dev liblzma-dev libpcre2-dev \
