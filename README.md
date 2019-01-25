@@ -1,4 +1,4 @@
-# Fresh Linux Box [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+# Fresh Linux/Ubuntu Box [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 > Customization of fresh Linux installs, using Debian/Ubuntu and derivatives
 
@@ -21,9 +21,8 @@ Chromebook 11 C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002
 14.04 Trusty Tahr](http://releases.ubuntu.com/14.04/) with the [Unity
 desktop](https://unity.ubuntu.com/), installed via
 [rEFIt](http://refit.sourceforge.net/)), and a [ThinkPad X1 Carbon 2018,
-(6th-generation)](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Carbon-6th-Gen/p/20KH002HUS) (running [Ubuntu 18.04 Bionic
-Beaver](http://releases.ubuntu.com/18.04/) with the minimal [i3 window
-manager](https://i3wm.org))
+(6th-generation)](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Carbon-6th-Gen/p/20KH002HUS)
+(running [Ubuntu 18.04 Bionic Beaver](http://releases.ubuntu.com/18.04/))
 
 ---
 
@@ -32,7 +31,7 @@ manager](https://i3wm.org))
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
 3. `git clone https://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
-4. `sudo sh ~/ubuntu-fresh/core.sh`
+4. `sudo . ~/ubuntu-fresh/core.sh`
 5. `sudo . ~/ubuntu-fresh/langs.sh`
 6. `sudo . ~/ubuntu-fresh/tools.sh`
 7. `. ~/ubuntu-fresh/nosudo.sh`
