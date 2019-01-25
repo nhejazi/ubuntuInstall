@@ -29,41 +29,19 @@ manager](https://i3wm.org))
 
 ## How do I use this?
 
-### Lite Local Setup (e.g., Chromebook w/ Crouton):
-A configuration for machines with limited resources (e.g., on Chromebook with
-[Crouton](https://github.com/dnschneid/crouton)).
-__For directions on installing Ubuntu on your Chromebook using _Crouton_, see
-file `Crouton.md` in this repository.__
-
 1. `sudo apt-get update && sudo apt-get upgrade`
 2. `sudo apt-get install build-essential git`
 3. `git clone https://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
 4. `sudo sh ~/ubuntu-fresh/core.sh`
-5. `sudo sh ~/ubuntu-fresh/langs-core.sh`
-6. `sudo sh ~/ubuntu-fresh/tools.sh`
-7. `sh ~/ubuntu-fresh/nosudo.sh`
+5. `sudo . ~/ubuntu-fresh/langs.sh`
+6. `sudo . ~/ubuntu-fresh/tools.sh`
+7. `. ~/ubuntu-fresh/nosudo.sh`
 
 **_N.B.,_** Following this minimal setup procedure, consider running either
 `xfce.sh` or `lxde.sh`. The former will modify the XFCE desktop environment to
 make it leaner for use on Chromebooks while the latter provides the LXDE desktop
 environment, which benchmarks reveal to be the least resource-intensive desktop
 environment available on Ubuntu-derived systems.
-
----
-
-### Standard Local Setup (e.g., MacBook Pro w/ rEFIt):
-I prefer this setup when configuring Ubuntu on machines with fairly
-unconstrained resources (e.g., on a dual-booting MacBook Pro configured with
-[rEFIt](http://refit.sourceforge.net/)).
-
-1. `sudo apt-get update && sudo apt-get upgrade`
-2. `sudo apt-get install build-essential git`
-3. `git clone http://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
-4. `sudo sh ~/ubuntu-fresh/core.sh`
-5. `sudo sh ~/ubuntu-fresh/langs-core.sh`
-6. `sudo sh ~/ubuntu-fresh/langs-extra.sh`
-6. `sudo sh ~/ubuntu-fresh/tools.sh`
-7. `sh ~/ubuntu-fresh/nosudo.sh`
 
 ---
 
@@ -76,7 +54,7 @@ unconstrained resources (e.g., on a dual-booting MacBook Pro configured with
 
 ## License
 
-&copy; 2016-2018 [Nima Hejazi](https://nimahejazi.org)
+&copy; 2016-2019 [Nima Hejazi](https://nimahejazi.org)
 
 The contents of this repository are distributed under the MIT license. See file
 `LICENSE` for details.
