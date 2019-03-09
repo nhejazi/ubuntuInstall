@@ -61,6 +61,10 @@ add-apt-repository ppa:neovim-ppa/unstable
 apt-get install -y vim vim-nox neovim
 
 
+# get Tilix terminal (https://gnunn1.github.io/tilix-web/)
+apt-get install tilix
+
+
 # zsh, zsh completions, and z-plug manager
 apt-get install -y zsh
 curl -sL --proto-redir -all,https \

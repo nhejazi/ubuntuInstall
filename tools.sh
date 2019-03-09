@@ -7,9 +7,9 @@ fi
 
 
 # Hyper (terminal emulator)
-echo "Installing Hyper v2.1.0-canary.2 \nCHECK this is the most recent stable release."
-wget http://github.com/zeit/hyper/releases/download/2.1.0-canary.2/hyper_2.1.0-canary.2_amd64.deb
-dpkg -i hyper_2.1.0-canary.2_amd64.deb
+#echo "Installing Hyper v2.1.0-canary.2 \nCHECK this is the most recent stable release."
+#wget http://github.com/zeit/hyper/releases/download/2.1.0-canary.2/hyper_2.1.0-canary.2_amd64.deb
+#dpkg -i hyper_2.1.0-canary.2_amd64.deb
 
 
 # pandoc (markup conversion tool)
