@@ -20,8 +20,8 @@ dpkg -i pandoc-2.2.1-1-amd64.deb
 
 # Hugo (modern static site generator)
 echo "Installing Hugo v0.55.6 \nCHECK this is the most recent stable release."
-wget https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb
-dpkg -i hugo_0.55.6_Linux-64bit.deb
+wget https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_extended_0.55.6_Linux-64bit.deb
+dpkg -i hugo_extended_0.55.6_Linux-64bit.deb
 
 
 # asciinema (terminal recorder)
