@@ -25,4 +25,3 @@ fi
 # get and setup config files for using Neovim
 git clone https://github.com/nhejazi/vimForLife.git ~/.config/nvim
 sh ~/.config/nvim/_setupNeovim.sh
-

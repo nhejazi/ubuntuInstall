@@ -11,4 +11,3 @@ sudo apt-get install lubuntu-desktop
 
 # get the vanilla LXDE desktop environment
 #sudo apt-get install lxde
-

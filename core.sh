@@ -50,18 +50,22 @@ apt-get install gnupg2
 apt-get install -y qpdf
 
 
-# add The Silver Searcher
+# The Silver Searcher
 apt-get install -y silversearcher-ag
 
 
-# get Vim and NeoVim
+# Vim and NeoVim
 # NOTE: vim-nox is required for python support on Vim 8.0+ (for YCM)
 add-apt-repository ppa:jonathonf/vim
 add-apt-repository ppa:neovim-ppa/unstable
 apt-get install -y vim vim-nox neovim
 
 
-# get Tilix terminal (https://gnunn1.github.io/tilix-web/)
+# user-friendly htop system monitoring
+apt-get install htop
+
+
+# Tilix terminal (https://gnunn1.github.io/tilix-web/)
 apt-get install tilix
 
 
@@ -69,4 +73,3 @@ apt-get install tilix
 apt-get install -y zsh
 curl -sL --proto-redir -all,https \
   https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-

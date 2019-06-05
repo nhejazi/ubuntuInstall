@@ -33,4 +33,3 @@ apt-get install -y asciinema
 # fix installation issues arising from dependencies
 apt-get install -f -y
 echo "If any dependency warnings appeared, run this script a second time."
-

@@ -38,4 +38,3 @@ apt-get install texlive-full
 # force install all of the above with dependencies
 apt-get install -f -y
 echo "If any dependency warnings appeared, run this script a second time."
-
