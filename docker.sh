@@ -8,33 +8,30 @@ fi
 
 # add notice about instructions for Docker on Ubuntu
 echo "This script installs Docker based on instructions from
-      https://docs.docker.com/engine/installation/linux/ubuntulinux/"
+      https://docs.docker.com/install/linux/docker-ce/ubuntu/"
 
 
 # update and make sure APT works with HTTPS and CA certificates
 apt-get update -y
-apt-get install -y apt-transport-https
-apt-get install -y ca-certificates
+apt-get install -y apt-transport-https ca-certificates curl gnupg-agent
 
 
-# add the GPG key for Docker
-apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+# add the official GPG key for Docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 
-
-# add entry for Ubuntu Trusty to the docker.list file
-echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > '/etc/apt/sources.list.d/docker.list'
-
+# add the stable repository for Docker
+add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
 
 # update and make sure APT pulls from the correct repository for Docker
 apt-get update -y
-apt-cache policy docker-engine
+apt-get install -y docker-ce docker-ce-cli containerd.io
 
+# create a user-group for Docker and add current user to it
+groupadd docker
+usermod -aG docker $USER
 
-# for Ubuntu Trusty, Wiley, and Xenial, `linux-image-extra` is recommended
-apt-get install -y linux-image-extra-$(uname -r)  # CHROMEBOOK LINUX KERNEL TOO OLD
-apt-get install -y apparmor  # required for 14.04 Trusty Tahr
-
-
-# now, finally, install Docker after a quick update
-apt-get update -y
-apt-get install -y docker-engine
+# configure Docker to start on system boot
+systemctl enable docker
