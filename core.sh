@@ -65,8 +65,9 @@ apt-get install -y vim vim-nox neovim
 apt-get install htop
 
 
-# Tilix terminal (https://gnunn1.github.io/tilix-web/)
-apt-get install tilix
+# Alacritty terminal emulator (https://github.com/jwilm/alacritty)
+add-apt-repository -y ppa:mmstick76/alacritty
+apt-get install alacritty
 
 
 # zsh, zsh completions, and z-plug manager
