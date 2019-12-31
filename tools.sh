@@ -25,7 +25,7 @@ dpkg -i hugo_extended_0.55.6_Linux-64bit.deb
 
 
 # asciinema (terminal recorder)
-apt-add-repository ppa:zanchey/asciinema
+apt-add-repository -y ppa:zanchey/asciinema
 apt-get update -y
 apt-get install -y asciinema
 

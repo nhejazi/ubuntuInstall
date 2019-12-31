@@ -12,8 +12,8 @@ apt-get upgrade -y
 
 
 # get core tools, languages, and libraries
-apt-get install -y build-essential software-properties-common wget curl git \
-  cmake lsof m4 apt-transport-https ca-certificates autoconf
+apt-get install -y build-essential software-properties-common wget curl cmake \
+  git git-email lsof m4 apt-transport-https ca-certificates autoconf
 apt-get install -y python-setuptools python-software-properties ruby ruby-dev \
   texinfo xclip
 apt-get install -y libzmq3 libzmq3-dev libzmq5-dev libczmq-dev libncurses-dev \
@@ -43,7 +43,7 @@ apt-get install -y ssh-askpass seahorse keychain
 
 
 # GPG2 for signing commits
-apt-get install gnupg2
+apt-get install -y gnupg2
 
 
 # utility for building/checking PDFs
@@ -56,18 +56,18 @@ apt-get install -y silversearcher-ag
 
 # Vim and NeoVim
 # NOTE: vim-nox is required for python support on Vim 8.0+ (for YCM)
-add-apt-repository ppa:jonathonf/vim
-add-apt-repository ppa:neovim-ppa/unstable
+add-apt-repository -y ppa:jonathonf/vim
+add-apt-repository -y ppa:neovim-ppa/unstable
 apt-get install -y vim vim-nox neovim
 
 
 # user-friendly htop system monitoring
-apt-get install htop
+apt-get install -y htop
 
 
 # Alacritty terminal emulator (https://github.com/jwilm/alacritty)
 add-apt-repository -y ppa:mmstick76/alacritty
-apt-get install alacritty
+apt-get install -y alacritty
 
 
 # zsh, zsh completions, and z-plug manager
