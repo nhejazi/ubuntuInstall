@@ -13,15 +13,21 @@ fi
 
 
 # pandoc (markup conversion tool)
-echo "Installing Pandoc v.2.2.1-1 \n PLEASE CHECK that this is the most recent stable release."
-wget http://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-1-amd64.deb
-dpkg -i pandoc-2.2.1-1-amd64.deb
+echo "Installing Pandoc v.2.9.1.1 \n PLEASE CHECK that this is the most recent stable release."
+wget http://github.com/jgm/pandoc/releases/download/2.9.1.1/pandoc-2.9.1.1-1-amd64.deb
+dpkg -i pandoc-2.9.1.1-1-amd64.deb
 
 
 # Hugo (modern static site generator)
-echo "Installing Hugo v0.55.6 \nCHECK this is the most recent stable release."
-wget https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_extended_0.55.6_Linux-64bit.deb
-dpkg -i hugo_extended_0.55.6_Linux-64bit.deb
+echo "Installing Hugo v0.64.1 \nCHECK this is the most recent stable release."
+wget https://github.com/gohugoio/hugo/releases/download/v0.64.1/hugo_extended_0.64.1_Linux-64bit.deb
+dpkg -i hugo_extended_0.64.1_Linux-64bit.deb
+
+
+# GitHub CLI
+echo "Installing GitHub CLI v0.5.4 \nCHECK this is the most recent stable release."
+wget https://github.com/cli/cli/releases/download/v0.5.4/gh_0.5.4_linux_amd64.deb
+dpkg -i gh_0.5.4_linux_amd64.deb
 
 
 # asciinema (terminal recorder)
