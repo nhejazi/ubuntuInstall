@@ -2,7 +2,7 @@
 
 # setup my dotfiles
 git clone https://github.com/nhejazi/mydots.git ~/.dotfiles
-sh ~/.dotfiles/place:files.sh
+sh ~/.dotfiles/place_files.sh
 
 
 # preserve any existing Vim configuration files
