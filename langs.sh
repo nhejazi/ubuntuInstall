@@ -7,18 +7,18 @@ fi
 
 
 # install R and R-dev
+add-apt-repository -y "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-add-apt-repository -y "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/"
 apt-get update -y
-apt-get install -y r-base r-base-dev
+apt-get install -y r-base r-base-core r-recommended r-base-dev
 
-
+# NOTE: REPLACED BY CONDA
 # install Python 3.7, dependencies, and pip
 ## NOTE: this results in pip, pip3, and pip3.7 all targeting python 3.7
-add-apt-repository -y ppa:deadsnakes/ppa
-apt-get update -y
-apt-get install -y python3.7 python3.7-dev python3.7-venv
-curl https://bootstrap.pypa.io/get-pip.py | sudo python3.7
+#add-apt-repository -y ppa:deadsnakes/ppa
+#apt-get update -y
+#apt-get install -y python3.7 python3.7-dev python3.7-venv
+#curl https://bootstrap.pypa.io/get-pip.py | sudo python3.7
 
 
 # install rust

@@ -5,6 +5,9 @@ if [[ "$EUID" -ne 0 ]]; then
   exit
 fi
 
+# conda for latest Python 3
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 
 # pandoc (markup conversion tool)
 echo "Installing Pandoc v.2.9.2.1 \n PLEASE CHECK that this is the most recent stable release."
