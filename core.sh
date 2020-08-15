@@ -34,10 +34,6 @@ add-apt-repository -y ppa:pi-rho/dev
 apt-get install -y screen tmux=2.0-1~ppa1~t mosh
 
 
-# i3 tiling window manager
-apt-get install -y i3
-
-
 # ssh-askpass, seahorse, and keychain management utilities (for ssh-agent)
 apt-get install -y ssh-askpass seahorse keychain
 
@@ -63,6 +59,8 @@ apt-get install -y vim vim-nox neovim
 
 # user-friendly htop system monitoring
 apt-get install -y htop
+add-apt-repository ppa:bashtop-monitor/bashtop
+apt-get install -y bashtop
 
 
 # Alacritty terminal emulator (https://github.com/jwilm/alacritty)
