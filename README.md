@@ -1,6 +1,6 @@
-# Fresh Linux/Ubuntu Box [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+# Fresh Ubuntu Box [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-> Customization of fresh Linux installs, using Debian/Ubuntu and derivatives
+> Customization of fresh Linux installs, using Ubuntu and derivatives
 
 ---
 

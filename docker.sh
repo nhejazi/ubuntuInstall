@@ -12,8 +12,8 @@ echo "This script installs Docker based on instructions from
 
 
 # update and make sure APT works with HTTPS and CA certificates
-apt-get update -y
-apt-get install -y apt-transport-https ca-certificates curl gnupg-agent
+apt update -y
+apt install -y apt-transport-https ca-certificates curl gnupg-agent
 
 
 # add the official GPG key for Docker
@@ -26,8 +26,8 @@ add-apt-repository -y \
    stable"
 
 # update and make sure APT pulls from the correct repository for Docker
-apt-get update -y
-apt-get install -y docker-ce docker-ce-cli containerd.io
+apt update -y
+apt install -y docker-ce docker-ce-cli containerd.io
 
 # create a user-group for Docker and add current user to it
 groupadd docker

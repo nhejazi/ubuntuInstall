@@ -12,17 +12,17 @@ echo "This script makes additions to Xfce based on recommendations from
 
 
 # add packages/software to make Xubuntu/Xfce look/feel more like Ubuntu/Unity
-apt-get update -y
-apt-get install -y ubuntu-restricted-extras
-apt-get install -y ttf-ubuntu-font-family
-apt-get install -y xubuntu-icon-theme
+apt update -y
+apt install -y ubuntu-restricted-extras
+apt install -y ttf-ubuntu-font-family
+apt install -y xubuntu-icon-theme
 
 
 # add the Xfce "whisker" menu and related plug-ins
-apt-get install -y xfce4-whiskermenu-plugin
-apt-get install -y xfce4-indicator-plugin
-apt-get install -y --no-install-recommends indicator-sound
+apt install -y xfce4-whiskermenu-plugin
+apt install -y xfce4-indicator-plugin
+apt install -y --no-install-recommends indicator-sound
 
 
 # remove XScreensaver, since it causes problems on Chromebook
-apt-get purge xscreensaver
+apt purge xscreensaver

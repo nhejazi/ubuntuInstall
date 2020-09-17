@@ -22,17 +22,18 @@ dpkg -i hugo_extended_0.72.0_Linux-64bit.deb
 
 
 # GitHub CLI
-echo "Installing GitHub CLI v0.5.4 \nCHECK this is the most recent stable release."
-wget https://github.com/cli/cli/releases/download/v0.5.4/gh_0.5.4_linux_amd64.deb
-dpkg -i gh_0.5.4_linux_amd64.deb
+apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+apt-add-repository -y https://cli.github.com/packages
+apt update -y
+apt install -y gh
 
 
 # asciinema (terminal recorder)
 apt-add-repository -y ppa:zanchey/asciinema
-apt-get update -y
-apt-get install -y asciinema
+apt update -y
+apt install -y asciinema
 
 
 # fix installation issues arising from dependencies
-apt-get install -f -y
+apt install -f -y
 echo "If any dependency warnings appeared, run this script a second time."

@@ -9,8 +9,9 @@ fi
 # install R and R-dev
 add-apt-repository -y "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-apt-get update -y
-apt-get install -y r-base r-base-core r-recommended r-base-dev
+apt update -y
+apt install -y r-base r-base-core r-recommended r-base-dev
+
 
 # NOTE: REPLACED BY CONDA
 # install Python 3.7, dependencies, and pip
@@ -22,19 +23,19 @@ apt-get install -y r-base r-base-core r-recommended r-base-dev
 
 
 # install rust
-apt-get install -y cargo
+apt install -y cargo
 
 
 # java install
 add-apt-repository -y ppa:webupd8team/java
-apt-get update -y
-apt-get install -y oracle-java8-installer
+apt update -y
+apt install -y oracle-java8-installer
 
 
 # latex install
-apt-get install -y texlive-full
+apt install -y texlive-full
 
 
 # force install all of the above with dependencies
-apt-get install -f -y
+apt install -f -y
 echo "If any dependency warnings appeared, run this script a second time."
