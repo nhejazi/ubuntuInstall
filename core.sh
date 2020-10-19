@@ -59,8 +59,6 @@ apt install -y vim vim-nox neovim
 
 # user-friendly htop system monitoring
 apt install -y htop
-add-apt-repository ppa:bashtop-monitor/bashtop
-apt install -y bashtop
 
 
 # Alacritty terminal emulator (https://github.com/jwilm/alacritty)

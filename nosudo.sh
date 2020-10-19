@@ -25,3 +25,7 @@ fi
 # get and setup config files for using Neovim
 git clone https://github.com/nhejazi/vimForLife.git ~/.config/nvim
 sh ~/.config/nvim/_setupNeovim.sh
+
+
+# install python tools from pypi
+python -m pip install -U glances bpytop
