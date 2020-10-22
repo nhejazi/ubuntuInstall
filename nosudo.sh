@@ -2,7 +2,7 @@
 
 # setup my dotfiles
 git clone https://github.com/nhejazi/mydots.git ~/.dotfiles
-sh ~/.dotfiles/place_files.sh
+sh ~/.dotfiles/_setup.sh
 
 
 # preserve any existing Vim configuration files
@@ -12,20 +12,14 @@ fi
 
 
 # get and setup config files for using Vim
-git clone https://github.com/nhejazi/vimForLife.git ~/.vim
-sh ~/.vim/_setupVim.sh
+git clone https://github.com/nhejazi/vim_lyfe.git ~/.vim
+sh ~/.vim/_setup.sh
 
 
-# preserve any existing Neovim configuration files
-if [ -e ~/.config/nvim ]; then
-  mv -f ~/.config/nvim ~/.config/nvim_orig;
-fi
+# install pyenv for project environment management
+curl https://pyenv.run | bash
 
 
-# get and setup config files for using Neovim
-git clone https://github.com/nhejazi/vimForLife.git ~/.config/nvim
-sh ~/.config/nvim/_setupNeovim.sh
-
-
-# install python tools from pypi
-python -m pip install -U glances bpytop
+# conda for latest Python 3
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh

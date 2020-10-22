@@ -13,15 +13,6 @@ apt update -y
 apt install -y r-base r-base-core r-recommended r-base-dev
 
 
-# NOTE: REPLACED BY CONDA
-# install Python 3.7, dependencies, and pip
-## NOTE: this results in pip, pip3, and pip3.7 all targeting python 3.7
-#add-apt-repository -y ppa:deadsnakes/ppa
-#apt-get update -y
-#apt-get install -y python3.7 python3.7-dev python3.7-venv
-#curl https://bootstrap.pypa.io/get-pip.py | sudo python3.7
-
-
 # install rust
 apt install -y cargo
 
