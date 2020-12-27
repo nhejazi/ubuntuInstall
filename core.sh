@@ -61,6 +61,10 @@ apt install -y vim vim-nox neovim
 apt install -y htop
 
 
+# convenient display of system specs/info
+apt install -y neofetch
+
+
 # Alacritty terminal emulator (https://github.com/jwilm/alacritty)
 add-apt-repository -y ppa:mmstick76/alacritty
 apt install -y alacritty
