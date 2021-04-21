@@ -18,7 +18,12 @@ wget https://github.com/gohugoio/hugo/releases/download/v0.72.0/hugo_extended_0.
 dpkg -i hugo_extended_0.72.0_Linux-64bit.deb
 
 
-# GitHub CLI
+# littler: R command line front-end (https://github.com/eddelbuettel/littler)
+apt install littler
+ln -s /usr/bin/r /usr/local/bin/lr
+
+
+# GitHub CLI (https://cli.github.com/)
 apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 apt-add-repository -y https://cli.github.com/packages
 apt update -y
