@@ -29,9 +29,9 @@ apt install -y libexpat-dev libsdl-dev libxml2-dev libgeos-dev zlib1g-dev \
 apt install -y bash-completion
 
 
-# add GNU Screen, mosh (mobile shell client), and Tmux v2.0
+# add Tmux v2.0+ and mosh (mobile shell client)
 add-apt-repository -y ppa:pi-rho/dev
-apt install -y screen tmux=2.0-1~ppa1~t mosh
+apt install -y tmux=2.0-1~ppa1~t mosh
 
 
 # ssh-askpass, seahorse, and keychain management utilities (for ssh-agent)
@@ -48,6 +48,11 @@ apt install -y qpdf
 
 # The Silver Searcher
 apt install -y silversearcher-ag
+
+
+# TLP: optimizatio of Linux laptop battery life
+add-apt-repository -y ppa:linrunner/tlp
+apt install tlp tlp-rdw acpi-call-dkms
 
 
 # Vim and NeoVim
