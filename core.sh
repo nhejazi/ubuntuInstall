@@ -34,8 +34,8 @@ add-apt-repository -y ppa:pi-rho/dev
 apt install -y tmux=2.0-1~ppa1~t mosh
 
 
-# ssh-askpass, seahorse, and keychain management utilities (for ssh-agent)
-apt install -y ssh-askpass seahorse keychain
+# ssh-askpass and keychain for ssh-agent
+apt install -y ssh-askpass keychain
 
 
 # GPG2 for signing commits
@@ -50,7 +50,7 @@ apt install -y qpdf
 apt install -y silversearcher-ag
 
 
-# TLP: optimizatio of Linux laptop battery life
+# TLP: optimization of Linux laptop battery life
 add-apt-repository -y ppa:linrunner/tlp
 apt install tlp tlp-rdw acpi-call-dkms
 
