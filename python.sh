@@ -1,1 +1,1 @@
-python -m pip install glances bpytop howdoi
+python -m pip install glances bpytop tldr howdoi
