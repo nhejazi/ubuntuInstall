@@ -1,3 +1,8 @@
+# install and setup Python via pyenv
+pyenv install python 3.8.6
+pyenv virtualenv 3.8.6 base_env
+pyenv global base_env
+
 # upgrade pip first
 python -m pip install --upgrade pip
 
