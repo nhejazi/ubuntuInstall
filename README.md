@@ -11,18 +11,19 @@ This is a collection of scripts that flexibly allowing setting up a few
 different machine configurations, written specifically to handle a variety of
 resource constraints.
 
-This workflow has been tested on [AWS EC2 Ubuntu 14.04
-instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS), [DigitalOcean's
-Droplets (Ubuntu 20.04)](https://www.digitalocean.com/products/droplets/), my
-old [Acer Chromebook 11
-C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) (running
-[Ubuntu 14.04](http://releases.ubuntu.com/14.04/) via
-[Crouton](https://github.com/dnschneid/crouton)), a dual-booting [MacBook Pro
-2010 (7,1)](https://support.apple.com/kb/sp583?locale=en_US) (running [Ubuntu
+This workflow has been tested on [AWS EC2 instance ([Ubuntu
+14.04](http://releases.ubuntu.com/14.04/))](https://aws.amazon.com/marketplace/pp/B00JV9JBDS),
+[DigitalOcean's Droplets ([Ubuntu
+20.04](https://releases.ubuntu.com/20.04/)](https://www.digitalocean.com/products/droplets/),
+an [Acer Chromebook 11
+C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) ([Ubuntu
 14.04](http://releases.ubuntu.com/14.04/) via
-[rEFIt](http://refit.sourceforge.net/)), and a [ThinkPad X1 Carbon 2018,
-(6th-gen)]( https://wiki.archlinux.org/title/Lenovo_ThinkPad_X1_Carbon_(Gen_6))
-(running [Ubuntu 18.04](http://releases.ubuntu.com/18.04/) then [Ubuntu
+[Crouton](https://github.com/dnschneid/crouton)), a dual-booting [MacBook Pro
+2010 (7,1)](https://support.apple.com/kb/sp583?locale=en_US) ([Ubuntu
+14.04](http://releases.ubuntu.com/14.04/) via
+[rEFIt](http://refit.sourceforge.net/)), and a [6th-gen ThinkPad X1 Carbon
+2018](https://wiki.archlinux.org/title/Lenovo_ThinkPad_X1_Carbon_(Gen_6))
+([Ubuntu 18.04](http://releases.ubuntu.com/18.04/); [Ubuntu
 20.04](https://releases.ubuntu.com/20.04/))
 
 ---
