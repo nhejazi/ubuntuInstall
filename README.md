@@ -20,8 +20,8 @@ C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) ([Ubuntu
 [rEFIt](http://refit.sourceforge.net/)), a [6th-generation ThinkPad X1 Carbon
 2018](https://wiki.archlinux.org/title/Lenovo_ThinkPad_X1_Carbon_(Gen_6))
 ([Ubuntu 18.04](http://releases.ubuntu.com/18.04/); [Ubuntu
-20.04](https://releases.ubuntu.com/20.04/)), and (soon) the [Framework DIY
-edition](https://frame.work/laptop-diy-edition) ([Ubuntu
+20.04](https://releases.ubuntu.com/20.04/)), and (soon) a [Framework
+DIY](https://frame.work/laptop-diy-edition) ([Ubuntu
 21.04](http://releases.ubuntu.com/21.04/)).
 
 ---
