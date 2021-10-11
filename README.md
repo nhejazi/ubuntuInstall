@@ -11,9 +11,10 @@ This is a collection of scripts that flexibly allowing setting up a few
 different machine configurations, written specifically to handle a variety of
 resource constraints.
 
-This workflow has been tested on [AWS EC2 Ubuntu
-instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS), my old [Acer
-Chromebook 11
+This workflow has been tested on [AWS EC2 Ubuntu 14.04
+instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS), [DigitalOcean's
+Droplets (Ubuntu 20.04)](https://www.digitalocean.com/products/droplets/), my
+old [Acer Chromebook 11
 C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) (running
 [Ubuntu 14.04](http://releases.ubuntu.com/14.04/) via
 [Crouton](https://github.com/dnschneid/crouton)), a dual-booting [MacBook Pro
@@ -31,19 +32,18 @@ C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) (running
 1. `sudo apt update && sudo apt upgrade`
 2. `sudo apt install build-essential git`
 3. `git clone https://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
-4. `cd ~/ubuntu-fresh`
-4. `sudo . ./core.sh`
-5. `sudo . ./langs.sh`
-6. `sudo . ./tools.sh`
-7. `. ./config.sh`
+4. `sudo sh ~/ubuntu-fresh/core.sh`
+5. `sudo sh ~/ubuntu-fresh/langs.sh`
+6. `sudo sh ~/ubuntu-fresh/tools.sh`
+7. `sh ~/ubuntu-fresh/config.sh`
 
 ---
 
 ## Package Libraries
 
 * __[nhejazi/myPkgLib](https://github.com/nhejazi/myPkgLib)__ - a working list
-    of packages, useful alongside the tools installed here. Now unmaintained but
-    may be a useful example.
+    of packages, useful alongside the tools installed here. Now unmaintained and
+    outdated but might still serve as a useful example.
 
 ---
 
