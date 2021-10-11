@@ -8,11 +8,9 @@
 
 Customizing fresh Linux Ubuntu boxes to my preferences.
 
-Tested on [AWS EC2 [Ubuntu 14.04](http://releases.ubuntu.com/14.04/)
-instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS),
-[DigitalOcean's [Ubuntu 20.04](https://releases.ubuntu.com/20.04/)
-droplets](https://www.digitalocean.com/products/droplets/), an [Acer Chromebook
-11 C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) ([Ubuntu
+Tested on [AWS EC2 [Ubuntu 14.04](http://releases.ubuntu.com/14.04/)  instances](https://aws.amazon.com/marketplace/pp/B00JV9JBDS),
+[DigitalOcean's [Ubuntu 20.04](https://releases.ubuntu.com/20.04/) droplets](https://www.digitalocean.com/products/droplets/),
+an [Acer Chromebook 11 C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) ([Ubuntu
 14.04](http://releases.ubuntu.com/14.04/) via
 [Crouton](https://github.com/dnschneid/crouton)), a dual-booting [MacBook Pro
 2010 (7,1)](https://support.apple.com/kb/sp583?locale=en_US) ([Ubuntu

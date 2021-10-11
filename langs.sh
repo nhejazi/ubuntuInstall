@@ -7,8 +7,7 @@ fi
 
 
 # install R and R-dev
-add-apt-repository -y "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+add-apt-repository -y "deb [arch=amd64] https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/"
 apt update -y
 apt install -y r-base r-base-core r-recommended r-base-dev
 
@@ -19,17 +18,11 @@ wget https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.3-linux-x86_
 echo "Manual installation of Julia v1.6.3 will be required."
 
 
-# install rust
-apt install -y cargo
+# install rust and java
+apt install -y cargo default-jre
 
 
-# java install
-add-apt-repository -y ppa:webupd8team/java
-apt update -y
-apt install -y oracle-java8-installer
-
-
-# latex install
+# TeXlive latex distribution
 apt install -y texlive-full
 
 
