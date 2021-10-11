@@ -13,12 +13,11 @@ apt update -y
 apt install -y r-base r-base-core r-recommended r-base-dev
 
 
-# install pyenv for Python environment management
-curl https://pyenv.run | bash
-
-
 # download a Julia binary
+echo "Downloading Julia v1.6.3 \nCHECK this is the most recent stable release."
 wget https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.3-linux-x86_64.tar.gz
+echo "Manual installation of Julia v1.6.3 will be required."
+
 
 # install rust
 apt install -y cargo
@@ -34,6 +33,5 @@ apt install -y oracle-java8-installer
 apt install -y texlive-full
 
 
-# force install all of the above with dependencies
+# try fixing issues by force installing
 apt install -f -y
-echo "If any dependency warnings appeared, run this script a second time."

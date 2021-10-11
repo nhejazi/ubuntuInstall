@@ -36,6 +36,24 @@ apt update -y
 apt install -y asciinema
 
 
-# fix installation issues arising from dependencies
+# the VSCode editor
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+apt update -y
+apt install code
+
+
+# Firefox web browser
+apt-add-repository -y ppa:ubuntu-mozilla-security/ppa
+apt install -y firefox
+
+
+# Brave web browser
+curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+apt update -y
+apt install -y brave-browser
+
+
+# try fixing issues by force installing
 apt install -f -y
-echo "If any dependency warnings appeared, run this script a second time."

@@ -1,4 +1,5 @@
-# install helper tools via pip
+# install pyenv for Python environment management
+curl https://pyenv.run | bash
 
 ## upgrade pip first
 python -m pip install --upgrade pip

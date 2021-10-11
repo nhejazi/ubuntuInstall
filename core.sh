@@ -25,13 +25,9 @@ apt install -y libexpat-dev libsdl-dev libxml2-dev libgeos-dev zlib1g-dev \
   libgdbm-dev libxslt1-dev libcairo-dev libgdal-dev libglib2.0-dev libtool
 
 
-# add bash completions
-apt install -y bash-completion
-
-
-# add Tmux v2.0+ and mosh (mobile shell client)
-add-apt-repository -y ppa:pi-rho/dev
-apt install -y tmux=2.0-1~ppa1~t mosh
+# TLP: optimization of Linux laptop battery life
+add-apt-repository -y ppa:linrunner/tlp
+apt install tlp tlp-rdw acpi-call-dkms
 
 
 # ssh-askpass and keychain for ssh-agent
@@ -50,32 +46,24 @@ apt install -y qpdf
 apt install -y silversearcher-ag
 
 
-# TLP: optimization of Linux laptop battery life
-add-apt-repository -y ppa:linrunner/tlp
-apt install tlp tlp-rdw acpi-call-dkms
+# Vim, the one true editor
+apt install -y vim
 
 
-# Vim and NeoVim
-# NOTE: vim-nox is required for python support on Vim 8.0+ (for YCM)
-add-apt-repository -y ppa:jonathonf/vim
-add-apt-repository -y ppa:neovim-ppa/unstable
-apt install -y vim vim-nox neovim
+# system monitoring and system specs
+apt install -y htop neofetch
 
 
-# user-friendly htop system monitoring
-apt install -y htop
+# add Tmux
+apt install -y tmux
 
 
-# convenient display of system specs/info
-apt install -y neofetch
-
-
-# Alacritty terminal emulator (https://github.com/jwilm/alacritty)
+# Alacritty, a fast terminal emulator (https://github.com/jwilm/alacritty)
 add-apt-repository -y ppa:mmstick76/alacritty
 apt install -y alacritty
 
 
-# zsh, zsh completions, and z-plug manager
+# zsh and the z-plug manager
 apt install -y zsh
 curl -sL --proto-redir -all,https \
   https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh

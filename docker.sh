@@ -19,19 +19,23 @@ apt install -y apt-transport-https ca-certificates curl gnupg-agent
 # add the official GPG key for Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 
+
 # add the stable repository for Docker
 add-apt-repository -y \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
 
+
 # update and make sure APT pulls from the correct repository for Docker
 apt update -y
 apt install -y docker-ce docker-ce-cli containerd.io
 
+
 # create a user-group for Docker and add current user to it
 groupadd docker
 usermod -aG docker $USER
+
 
 # configure Docker to start on system boot
 systemctl enable docker
