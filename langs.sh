@@ -13,6 +13,13 @@ apt update -y
 apt install -y r-base r-base-core r-recommended r-base-dev
 
 
+# install pyenv for Python environment management
+curl https://pyenv.run | bash
+
+
+# download a Julia binary
+wget https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.3-linux-x86_64.tar.gz
+
 # install rust
 apt install -y cargo
 

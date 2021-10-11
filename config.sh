@@ -15,6 +15,3 @@ fi
 git clone https://github.com/nhejazi/vim_lyfe.git ~/.vim
 sh ~/.vim/_setup.sh
 
-
-# install pyenv for project environment management
-curl https://pyenv.run | bash
