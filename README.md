@@ -31,10 +31,13 @@ DIY](https://frame.work/laptop-diy-edition) ([Ubuntu
 1. `sudo apt update && sudo apt upgrade`
 2. `sudo apt install build-essential git`
 3. `git clone https://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
-4. `sudo sh ~/ubuntu-fresh/core.sh`
-5. `sudo sh ~/ubuntu-fresh/langs.sh`
-6. `sudo sh ~/ubuntu-fresh/tools.sh`
-7. `sh ~/ubuntu-fresh/config.sh`
+4. `sudo bash ~/ubuntu-fresh/core.sh`
+5. `sudo bash ~/ubuntu-fresh/langs.sh`
+6. `sudo bash ~/ubuntu-fresh/tools.sh`
+7. `bash ~/ubuntu-fresh/config.sh`
+8. `bash ~/ubuntu-fresh/python.sh`
+9. `chsh -s $(which zsh)`
+
 
 ---
 
