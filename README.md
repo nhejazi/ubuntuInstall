@@ -36,7 +36,7 @@ DIY](https://frame.work/laptop-diy-edition) ([Ubuntu
 6. `sudo bash ~/ubuntu-fresh/tools.sh`
 7. `bash ~/ubuntu-fresh/config.sh`
 8. `bash ~/ubuntu-fresh/python.sh`
-9. `chsh -s $(which zsh)`
+9. `sudo chsh -s $(which zsh)`
 
 
 ---
