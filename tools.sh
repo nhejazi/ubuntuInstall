@@ -20,8 +20,8 @@ dpkg -i hugo_extended_0.72.0_Linux-64bit.deb
 rm hugo_*.deb
 
 
-# littler: R command line front-end (https://github.com/eddelbuettel/littler)
-apt install littler
+# littler, an R CLI frontend (https://github.com/eddelbuettel/littler)
+apt install -y littler
 ln -s /usr/bin/r /usr/local/bin/lr
 
 
@@ -40,7 +40,7 @@ apt install -y asciinema
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 apt update -y
-apt install code
+apt install -y code
 
 
 # Firefox web browser

@@ -3,7 +3,7 @@
 # setup my dotfiles
 git clone https://github.com/nhejazi/mydots.git ~/.dotfiles
 cd ~/.dotfiles
-sh ./_setup.sh
+bash ./_setup.sh
 
 
 # preserve any existing Vim configuration files
@@ -15,4 +15,4 @@ fi
 # get and setup config files for using Vim
 git clone https://github.com/nhejazi/vim_lyfe.git ~/.vim
 cd ~/.vim
-sh ./_setup.sh
+bash ./_setup.sh

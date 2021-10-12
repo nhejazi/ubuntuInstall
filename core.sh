@@ -12,8 +12,8 @@ apt upgrade -y
 
 
 # get core tools, languages, and libraries
-apt install -y build-essential software-properties-common wget curl cmake \
-  git git-email lsof m4 apt-transport-https ca-certificates autoconf
+apt install -y build-essential software-properties-common wget dirmngr curl \
+  cmake git git-email lsof m4 apt-transport-https ca-certificates autoconf
 apt install -y python-setuptools ruby ruby-dev texinfo xclip
 apt install -y libzmq3 libzmq3-dev libczmq-dev libncurses-dev libncurses5-dev \
   libcurl4-openssl-dev libcurl4-gnutls-dev
