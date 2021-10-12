@@ -35,7 +35,7 @@ DIY](https://frame.work/laptop-diy-edition) ([Ubuntu
 5. `sudo bash ~/ubuntu-fresh/langs.sh`
 6. `sudo bash ~/ubuntu-fresh/tools.sh`
 7. `bash ~/ubuntu-fresh/config.sh`
-8. `bash ~/ubuntu-fresh/python.sh`
+8. `bash ~/ubuntu-fresh/python.sh` (logout before running)
 9. `sudo chsh -s $(which zsh)`
 
 
