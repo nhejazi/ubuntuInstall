@@ -29,7 +29,7 @@ DIY](https://frame.work/laptop-diy-edition) ([Ubuntu
 ## How do I use this?
 
 1. `sudo apt update && sudo apt upgrade`
-2. `sudo apt install build-essential git`
+2. `sudo apt install -y build-essential git`
 3. `git clone https://github.com/nhejazi/ubuntu-fresh.git ~/ubuntu-fresh`
 4. `sudo bash ~/ubuntu-fresh/core.sh`
 5. `sudo bash ~/ubuntu-fresh/langs.sh`
