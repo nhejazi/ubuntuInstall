@@ -17,12 +17,11 @@ C740-C4PE](http://www.acer.com/ac/en/US/content/model/NX.EF2AA.002) ([Ubuntu
 [Crouton](https://github.com/dnschneid/crouton)), a dual-booting [MacBook Pro
 2010 (7,1)](https://support.apple.com/kb/sp583?locale=en_US) ([Ubuntu
 14.04](http://releases.ubuntu.com/14.04/) via
-[rEFIt](http://refit.sourceforge.net/)), a [6th-generation ThinkPad X1 Carbon
+[rEFIt](http://refit.sourceforge.net/)), and a [6th-generation ThinkPad X1
+Carbon
 2018](https://wiki.archlinux.org/title/Lenovo_ThinkPad_X1_Carbon_(Gen_6))
 ([Ubuntu 18.04](http://releases.ubuntu.com/18.04/); [Ubuntu
-20.04](https://releases.ubuntu.com/20.04/)), and (soon) a [Framework
-DIY](https://frame.work/laptop-diy-edition) ([Ubuntu
-21.04](http://releases.ubuntu.com/21.04/)).
+20.04](https://releases.ubuntu.com/20.04/)).
 
 ---
 
@@ -41,11 +40,15 @@ DIY](https://frame.work/laptop-diy-edition) ([Ubuntu
 
 ---
 
-## Package Libraries
+---
 
-* __[nhejazi/myPkgLib](https://github.com/nhejazi/myPkgLib)__ - a working list
-    of packages, useful alongside the tools installed here. Now unmaintained and
-    outdated but might still serve as a useful example.
+## Related
+
+* __[nhejazi/mydots](https://github.com/nhejazi/mydots)__ - my opinionated set
+    of configuration files for quick and easy setup on new machines.
+
+* __[nhejazi/vim_lyfe](https://github.com/nhejazi/vim_lyfe)__ - convenient
+    configurations for the one true editor, [Vim](http://www.vim.org/index.php).
 
 ---
 
