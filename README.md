@@ -37,7 +37,7 @@ X1 Carbon
 5. `sudo bash ~/ubuntu-fresh/langs.sh`
 6. `sudo bash ~/ubuntu-fresh/tools.sh`
 7. `bash ~/ubuntu-fresh/config.sh`
-8. `bash ~/ubuntu-fresh/python.sh` (logout before running)
+8. run `python.sh` manually (logout before running)
 9. `sudo chsh -s $(which zsh)`
 
 
