@@ -7,9 +7,9 @@ fi
 
 
 # pandoc (markup conversion tool)
-echo "Installing Pandoc v.2.9.2.1 \n PLEASE CHECK that this is the most recent stable release."
-wget http://github.com/jgm/pandoc/releases/download/2.9.2.1/pandoc-2.9.2.1-1-amd64.deb
-dpkg -i pandoc-2.9.2.1-1-amd64.deb
+echo "Installing Pandoc v.2.16.2 \n PLEASE CHECK that this is the most recent stable release."
+wget http://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-1-amd64.deb
+dpkg -i pandoc-2.16.2-1-amd64.deb
 rm pandoc-*.deb
 
 
