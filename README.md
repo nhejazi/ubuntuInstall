@@ -37,8 +37,8 @@ X1 Carbon
 5. `sudo bash ~/ubuntu-fresh/langs.sh`
 6. `sudo bash ~/ubuntu-fresh/tools.sh`
 7. `bash ~/ubuntu-fresh/config.sh`
-8. run `python.sh` manually (logout before running)
-9. `sudo chsh -s $(which zsh)`
+8. logout, then run `python.sh` manually
+9. `chsh -s $(which zsh)`
 
 
 ---
@@ -57,7 +57,7 @@ X1 Carbon
 
 ## License
 
-&copy; 2016-2021 [Nima Hejazi](https://nimahejazi.org)
+&copy; 2016-2022 [Nima Hejazi](https://nimahejazi.org)
 
 The contents of this repository are distributed under the MIT license. See file
 `LICENSE` for details.
