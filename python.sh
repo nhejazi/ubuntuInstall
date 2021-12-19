@@ -12,5 +12,5 @@ python -m pip install glances bpytop
 # fancy manpages and how-tos
 python -m pip install tldr howdoi
 
-# modern REPLs for Python and R
-python -m pip install ipython radian
+# modern REPLs for Python and R, and Julia installer
+python -m pip install ipython radian jill

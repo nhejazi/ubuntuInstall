@@ -16,11 +16,11 @@ apt install -y r-base r-base-core r-recommended r-base-dev
 
 
 # install Julia but also download recent binary
-apt install -y julia
-echo "Downloading Julia v1.6.3 \nCHECK this is the most recent stable release."
-wget https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.3-linux-x86_64.tar.gz
-tar -xf julia-1.6.3-linux-x86_64.tar.gz
-echo "Manual installation of Julia v1.6.3 will be required."
+#apt install -y julia
+#echo "Downloading Julia v1.7.0 \nCHECK this is the most recent stable release."
+#wget https://julialang-s3.julialang.org/bin/linux/x64/1.7/julia-1.7.0-linux-x86_64.tar.gz
+#tar -xf julia-1.7.0-linux-x86_64.tar.gz
+#echo "Manual installation of Julia v1.7.0 will be required."
 
 
 # install rust and java
