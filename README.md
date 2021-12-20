@@ -39,6 +39,7 @@ X1 Carbon
 7. `bash ~/ubuntu-fresh/config.sh`
 8. logout, then run `python.sh` manually
 9. `chsh -s $(which zsh)`
+10. optionally, run `docker.sh`
 
 
 ---
