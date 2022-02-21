@@ -57,7 +57,7 @@ X1 Carbon
 
 ## License
 
-&copy; 2016-2021 [Nima Hejazi](https://nimahejazi.org)
+&copy; 2016-2022 [Nima Hejazi](https://nimahejazi.org)
 
 The contents of this repository are distributed under the MIT license. See file
 `LICENSE` for details.
