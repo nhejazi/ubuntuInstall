@@ -41,8 +41,8 @@ apt install -y gnupg2
 apt install -y qpdf
 
 
-# The Silver Searcher
-apt install -y silversearcher-ag
+# The Silver Searcher and recursive grep
+apt install -y silversearcher-ag ripgrep
 
 
 # Vim, the one true editor
