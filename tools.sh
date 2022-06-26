@@ -7,16 +7,16 @@ fi
 
 
 # pandoc (markup conversion tool)
-echo "Installing Pandoc v.2.16.2 \n PLEASE CHECK that this is the most recent stable release."
-wget http://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-1-amd64.deb
-dpkg -i pandoc-2.16.2-1-amd64.deb
+echo "Installing Pandoc v.2.18.1 \n PLEASE CHECK that this is the most recent stable release."
+wget http://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-amd64.deb
+dpkg -i pandoc-2.18-1-amd64.deb
 rm pandoc-*.deb
 
 
 # Hugo (modern static site generator)
-echo "Installing Hugo v0.72.0 \nCHECK this is the most recent stable release."
-wget https://github.com/gohugoio/hugo/releases/download/v0.72.0/hugo_extended_0.72.0_Linux-64bit.deb
-dpkg -i hugo_extended_0.72.0_Linux-64bit.deb
+echo "Installing Hugo v0.101.0 \nCHECK this is the most recent stable release."
+wget https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Linux-64bit.deb
+dpkg -i hugo_extended_0.101.0_Linux-64bit.deb
 rm hugo_*.deb
 
 
@@ -46,13 +46,6 @@ apt install -y code
 # Firefox web browser
 apt-add-repository -y ppa:ubuntu-mozilla-security/ppa
 apt install -y firefox
-
-
-# Brave web browser
-curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-apt update -y
-apt install -y brave-browser
 
 
 # try fixing issues by force installing
