@@ -1,6 +1,6 @@
 # install Python and set up base environment via pyenv
-pyenv install 3.9.7
-pyenv virtualenv 3.9.7 base_env
+pyenv install 3.10.5
+pyenv virtualenv 3.10.5 base_env
 pyenv global base_env
 
 # upgrade pip first
