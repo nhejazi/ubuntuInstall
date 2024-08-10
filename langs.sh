@@ -5,31 +5,20 @@ if [[ "$EUID" -ne 0 ]]; then
   exit
 fi
 
+# rig installer and version multiplexer for R
+apt install -y r-rig
 
-# install R and R-dev
-wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | \
-  sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
-add-apt-repository -y \
-  "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
-apt update -y
-apt install -y r-base r-base-core r-recommended r-base-dev
-
-
-# install Julia but also download recent binary
-#apt install -y julia
-#echo "Downloading Julia v1.7.0 \nCHECK this is the most recent stable release."
-#wget https://julialang-s3.julialang.org/bin/linux/x64/1.7/julia-1.7.0-linux-x86_64.tar.gz
-#tar -xf julia-1.7.0-linux-x86_64.tar.gz
-#echo "Manual installation of Julia v1.7.0 will be required."
-
-
-# install rust and java
-apt install -y cargo default-jre
-
+# install java
+apt install default-jre
 
 # TeXlive latex distribution
 apt install -y texlive-full
 
+# rustup installer for Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# juliaup installer and version multiplexer for Julia
+curl -fsSL https://install.julialang.org | sh
 
 # try fixing issues by force installing
 apt install -f -y

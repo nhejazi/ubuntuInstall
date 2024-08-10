@@ -5,48 +5,39 @@ if [[ "$EUID" -ne 0 ]]; then
   exit
 fi
 
-
-# pandoc (markup conversion tool)
-echo "Installing Pandoc v.2.18.1 \n PLEASE CHECK that this is the most recent stable release."
-wget http://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-amd64.deb
-dpkg -i pandoc-2.18-1-amd64.deb
+# pandoc (markup swiss army knife)
+echo "Installing Pandoc v3.3.1 \n CHECK version against the repo."
+wget http://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-1-amd64.deb
+dpkg -i pandoc-3.3-1-amd64.deb
 rm pandoc-*.deb
 
+# quarto (technical publishing system)
+echo "Installing Quarto v1.5.56 \n CHECK version against the repo."
+wget http://github.com/quarto-dev/quarto-cli/releases/download/1.5.56/quarto-1.5-56-linux-amd64.deb
+dpkg -i quarto-1.5-56-linux-amd64.deb
+rm quarto-*.deb
 
-# Hugo (modern static site generator)
-echo "Installing Hugo v0.101.0 \nCHECK this is the most recent stable release."
-wget https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Linux-64bit.deb
-dpkg -i hugo_extended_0.101.0_Linux-64bit.deb
-rm hugo_*.deb
-
-
-# littler, an R CLI frontend (https://github.com/eddelbuettel/littler)
-apt install -y littler
-ln -s /usr/bin/r /usr/local/bin/lr
-
-
-# GitHub CLI (https://cli.github.com/)
+# github cli (https://cli.github.com/)
 apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 apt-add-repository -y https://cli.github.com/packages
 apt update -y
 apt install -y gh
 
-
-# asciinema terminal recording
-apt install -y asciinema
-
-
-# the VSCode editor
+# vscode editor
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 apt update -y
 apt install -y code
 
+# zed editor
+curl -f https://zed.dev/install.sh | sh
 
-# Firefox web browser
+# firefox web browser
 apt-add-repository -y ppa:ubuntu-mozilla-security/ppa
 apt install -y firefox
 
+# asciinema terminal recording
+apt install -y asciinema
 
 # try fixing issues by force installing
 apt install -f -y
